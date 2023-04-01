@@ -10,13 +10,16 @@
 
 
 	<build>
+
 		<plugins>
 			<!-- Ensure the jdk version for compilation -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
+
 				<configuration>
+<!--					<outputDirectory>target/classes-mutated</outputDirectory>-->
 					<source>1.7</source>
 					<target>1.7</target>
 					<encoding>UTF-8</encoding>
@@ -39,19 +42,27 @@
 				  <linkXRef>false</linkXRef>
 				</configuration>
 			</plugin>
+
 			<plugin>
-				<groupId>org.openclover</groupId>
-				<artifactId>clover-maven-plugin</artifactId>
-				<version>4.4.1</version>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0</version>
+<!--				<configuration>-->
+<!--					<workingDirectory>${project.build.directory}/classes-mutated/org/jsoup</workingDirectory>-->
+<!--&lt;!&ndash;					<classpathPrefix>${project.build.directory}/classes-mutated/org/jsoup</classpathPrefix>&ndash;&gt;-->
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
 	</build>
 
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.github.javaparser</groupId>
+			<artifactId>javaparser-core</artifactId>
+			<version>3.25.1</version>
+		</dependency>
 		<dependency>
 			<!-- junit -->
 			<groupId>junit</groupId>
@@ -80,12 +91,37 @@
 			<version>9.2.28.v20190418</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
 	</dependencies>
 
 
 	<!-- Checkstyle for code smells and static analysis -->
 	<reporting>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<showSuccess>false</showSuccess>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
