@@ -8,5 +8,5 @@
 1. Clone the repository.
 2. Run mvn test, to verify the code is in its original state.
 2. Run CodeModifierTest.java file.
-3. Run mvn surefire:test
-4. Run  mvn surefire-report:report-only , to generate the report
+3. Run mvn surefire:test.
+4. Run  mvn surefire-report:report-only , to generate the report.
