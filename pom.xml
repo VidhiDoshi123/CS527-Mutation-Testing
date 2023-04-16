@@ -46,7 +46,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>2.19.1</version>
 <!--				<configuration>-->
 <!--					<workingDirectory>${project.build.directory}/classes-mutated/org/jsoup</workingDirectory>-->
 <!--&lt;!&ndash;					<classpathPrefix>${project.build.directory}/classes-mutated/org/jsoup</classpathPrefix>&ndash;&gt;-->
@@ -96,7 +96,17 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.apache.maven.shared</groupId>
+            <artifactId>maven-invoker</artifactId>
+            <version>2.0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+    </dependencies>
 
 
 	<!-- Checkstyle for code smells and static analysis -->

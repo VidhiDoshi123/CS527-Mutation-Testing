@@ -11,12 +11,12 @@ org/jsoup/parser/HtmlTreeBuilderState$14.class
 org/jsoup/Connection.class
 org/jsoup/parser/TokeniserState$28.class
 org/jsoup/select/Evaluator$IndexEvaluator.class
-mutation/mutatedCodeCompile.class
 org/jsoup/nodes/Entities.class
 org/jsoup/safety/Cleaner$ElementMeta.class
 org/jsoup/select/Evaluator$MatchesOwn.class
 org/jsoup/nodes/DocumentType.class
 org/jsoup/select/Evaluator$AttributeWithValueMatching.class
+mutation/mutatedFilesCompiler$StringJavaFileObject.class
 org/jsoup/parser/TokeniserState$42.class
 org/jsoup/parser/TokeniserState$62.class
 org/jsoup/parser/TokeniserState$22.class
@@ -51,6 +51,7 @@ org/jsoup/select/NodeFilter.class
 org/jsoup/nodes/Entities$1.class
 org/jsoup/select/NodeFilter$FilterResult.class
 org/jsoup/select/Evaluator$Matches.class
+mutation/CodeModifier$3.class
 org/jsoup/select/Evaluator$IsEmpty.class
 org/jsoup/parser/TokeniserState$4.class
 org/jsoup/nodes/Element$2.class
@@ -64,7 +65,6 @@ org/jsoup/Connection$Method.class
 org/jsoup/parser/TokeniserState$46.class
 org/jsoup/parser/HtmlTreeBuilderState$15.class
 org/jsoup/select/Evaluator$Class.class
-mutation/CompilationUnitCompiler$StringJavaFileObject$1.class
 org/jsoup/parser/TokeniserState$66.class
 org/jsoup/nodes/Attributes$Dataset$EntrySet.class
 org/jsoup/parser/TokeniserState$51.class
@@ -140,11 +140,10 @@ org/jsoup/parser/Token$Comment.class
 org/jsoup/parser/TokeniserState$3.class
 org/jsoup/safety/Whitelist$Protocol.class
 org/jsoup/nodes/XmlDeclaration.class
+mutation/mutatedFilesCompiler.class
 org/jsoup/parser/TokeniserState.class
 org/jsoup/parser/Token$EndTag.class
-mutation/CompilationUnitCompiler.class
 org/jsoup/select/Evaluator$IsLastOfType.class
-mutation/CompilationUnitCompiler$StringJavaFileObject.class
 org/jsoup/internal/Normalizer.class
 org/jsoup/select/Evaluator$IsOnlyOfType.class
 org/jsoup/select/Evaluator$IsNthOfType.class
@@ -201,6 +200,7 @@ org/jsoup/nodes/Node$1.class
 org/jsoup/parser/Token$Doctype.class
 org/jsoup/parser/TokeniserState$61.class
 org/jsoup/parser/HtmlTreeBuilder.class
+mutation/TestRunner.class
 org/jsoup/parser/TokeniserState$26.class
 org/jsoup/helper/HttpConnection$Response.class
 org/jsoup/parser/Token$TokenType.class
