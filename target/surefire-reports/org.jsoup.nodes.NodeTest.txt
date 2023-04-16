@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.NodeTest
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 0, Errors: 25, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.jsoup.nodes.NodeTest
+Tests run: 25, Failures: 0, Errors: 25, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.jsoup.nodes.NodeTest
 handlesAbsOnProtocolessAbsoluteUris(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.handlesAbsOnProtocolessAbsoluteUris(NodeTest.java:102)
@@ -14,7 +14,7 @@ ownerDocument(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.ownerDocument(NodeTest.java:153)
 
-before(org.jsoup.nodes.NodeTest)  Time elapsed: 0.001 sec  <<< ERROR!
+before(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.before(NodeTest.java:176)
 
@@ -46,7 +46,7 @@ absHandlesRelativeQuery(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERRO
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.absHandlesRelativeQuery(NodeTest.java:119)
 
-unwrapNoChildren(org.jsoup.nodes.NodeTest)  Time elapsed: 0.001 sec  <<< ERROR!
+unwrapNoChildren(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.unwrapNoChildren(NodeTest.java:213)
 

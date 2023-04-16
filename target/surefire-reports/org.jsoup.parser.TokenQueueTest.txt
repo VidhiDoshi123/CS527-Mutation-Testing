@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.parser.TokenQueueTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 8, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.jsoup.parser.TokenQueueTest
-addFirst(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 9, Failures: 1, Errors: 8, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.parser.TokenQueueTest
+addFirst(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.addFirst(TokenQueueTest.java:58)
 
@@ -10,7 +10,7 @@ unescape(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.unescape(TokenQueueTest.java:43)
 
-chompToIgnoreCase(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0.001 sec  <<< ERROR!
+chompToIgnoreCase(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompToIgnoreCase(TokenQueueTest.java:48)
 
@@ -22,11 +22,11 @@ consumeToIgnoreSecondCallTest(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.consumeToIgnoreSecondCallTest(TokenQueueTest.java:67)
 
-chompBalancedThrowIllegalArgumentException(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+chompBalancedThrowIllegalArgumentException(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[Did not find balanced marker at 'something(or another)) else']> but was:<[Object must not be null]>
 	at org.jsoup.parser.TokenQueueTest.chompBalancedThrowIllegalArgumentException(TokenQueueTest.java:94)
 
-chompBalanced(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< ERROR!
+chompBalanced(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompBalanced(TokenQueueTest.java:13)
 
@@ -35,7 +35,7 @@ java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokenQueueTest.validateNestedQuotes(TokenQueueTest.java:83)
 	at org.jsoup.parser.TokenQueueTest.testNestedQuotes(TokenQueueTest.java:76)
 
-chompBalancedMatchesAsMuchAsPossible(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0.001 sec  <<< ERROR!
+chompBalancedMatchesAsMuchAsPossible(org.jsoup.parser.TokenQueueTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompBalancedMatchesAsMuchAsPossible(TokenQueueTest.java:36)
 

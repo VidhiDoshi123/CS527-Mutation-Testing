@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokeniserStateTest" time="0.007" tests="12" errors="11" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokeniserStateTest" time="0.006" tests="12" errors="11" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -90,8 +90,8 @@
 	at org.jsoup.parser.TokeniserStateTest.testRcdataLessthanSign(TokeniserStateTest.java:90)
 </error>
   </testcase>
-  <testcase name="ensureSearchArraysAreSorted" classname="org.jsoup.parser.TokeniserStateTest" time="0.006"/>
-  <testcase name="testCommentEndCoverage" classname="org.jsoup.parser.TokeniserStateTest" time="0">
+  <testcase name="ensureSearchArraysAreSorted" classname="org.jsoup.parser.TokeniserStateTest" time="0.005"/>
+  <testcase name="testCommentEndCoverage" classname="org.jsoup.parser.TokeniserStateTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testCommentEndCoverage(TokeniserStateTest.java:118)
 </error>

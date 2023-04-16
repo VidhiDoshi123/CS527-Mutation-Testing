@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokenQueueTest" time="0.003" tests="9" errors="8" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokenQueueTest" time="0.002" tests="9" errors="8" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -60,7 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="addFirst" classname="org.jsoup.parser.TokenQueueTest" time="0">
+  <testcase name="addFirst" classname="org.jsoup.parser.TokenQueueTest" time="0.001">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.addFirst(TokenQueueTest.java:58)
 </error>
@@ -70,7 +70,7 @@
 	at org.jsoup.parser.TokenQueueTest.unescape(TokenQueueTest.java:43)
 </error>
   </testcase>
-  <testcase name="chompToIgnoreCase" classname="org.jsoup.parser.TokenQueueTest" time="0.001">
+  <testcase name="chompToIgnoreCase" classname="org.jsoup.parser.TokenQueueTest" time="0">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompToIgnoreCase(TokenQueueTest.java:48)
 </error>
@@ -85,12 +85,12 @@
 	at org.jsoup.parser.TokenQueueTest.consumeToIgnoreSecondCallTest(TokenQueueTest.java:67)
 </error>
   </testcase>
-  <testcase name="chompBalancedThrowIllegalArgumentException" classname="org.jsoup.parser.TokenQueueTest" time="0.001">
+  <testcase name="chompBalancedThrowIllegalArgumentException" classname="org.jsoup.parser.TokenQueueTest" time="0">
     <failure message="expected:&lt;[Did not find balanced marker at &apos;something(or another)) else&apos;]&gt; but was:&lt;[Object must not be null]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Did not find balanced marker at 'something(or another)) else']> but was:<[Object must not be null]>
 	at org.jsoup.parser.TokenQueueTest.chompBalancedThrowIllegalArgumentException(TokenQueueTest.java:94)
 ]]></failure>
   </testcase>
-  <testcase name="chompBalanced" classname="org.jsoup.parser.TokenQueueTest" time="0">
+  <testcase name="chompBalanced" classname="org.jsoup.parser.TokenQueueTest" time="0.001">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompBalanced(TokenQueueTest.java:13)
 </error>
@@ -101,7 +101,7 @@
 	at org.jsoup.parser.TokenQueueTest.testNestedQuotes(TokenQueueTest.java:76)
 </error>
   </testcase>
-  <testcase name="chompBalancedMatchesAsMuchAsPossible" classname="org.jsoup.parser.TokenQueueTest" time="0.001">
+  <testcase name="chompBalancedMatchesAsMuchAsPossible" classname="org.jsoup.parser.TokenQueueTest" time="0">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.TokenQueueTest.chompBalancedMatchesAsMuchAsPossible(TokenQueueTest.java:36)
 </error>

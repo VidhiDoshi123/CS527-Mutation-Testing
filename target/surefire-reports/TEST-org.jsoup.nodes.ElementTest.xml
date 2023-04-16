@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.ElementTest" time="0.022" tests="99" errors="97" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.ElementTest" time="0.02" tests="99" errors="97" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -70,12 +70,12 @@
 	at org.jsoup.nodes.ElementTest.parentlessToString(ElementTest.java:605)
 </error>
   </testcase>
-  <testcase name="insertChildrenArgumentValidation" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="insertChildrenArgumentValidation" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.insertChildrenArgumentValidation(ElementTest.java:794)
 </error>
   </testcase>
-  <testcase name="testPrependElement" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testPrependElement" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testPrependElement(ElementTest.java:439)
 </error>
@@ -85,7 +85,7 @@
 	at org.jsoup.nodes.ElementTest.testOuterHtml(ElementTest.java:314)
 </error>
   </testcase>
-  <testcase name="testHashcodeIsStableWithContentChanges" classname="org.jsoup.nodes.ElementTest" time="0.004">
+  <testcase name="testHashcodeIsStableWithContentChanges" classname="org.jsoup.nodes.ElementTest" time="0.002">
     <error type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 Caused by: java.lang.IllegalArgumentException: Object must not be null
@@ -104,7 +104,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 </error>
   </testcase>
-  <testcase name="testClonesClassnames" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="testClonesClassnames" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClonesClassnames(ElementTest.java:634)
 </error>
@@ -126,7 +126,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testRemoveBeforeIndex(ElementTest.java:1236)
 </error>
   </testcase>
-  <testcase name="testChainedRemoveAttributes" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testChainedRemoveAttributes" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testChainedRemoveAttributes(ElementTest.java:1022)
 </error>
@@ -156,7 +156,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testGetElementById(ElementTest.java:60)
 </error>
   </testcase>
-  <testcase name="testClone" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testClone" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClone(ElementTest.java:614)
 </error>
@@ -188,7 +188,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testNamespacedElements(ElementTest.java:1013)
 </error>
   </testcase>
-  <testcase name="testClassNames" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testClassNames" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClassNames(ElementTest.java:880)
 </error>
@@ -218,7 +218,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testShadowElementsAreUpdated(ElementTest.java:1105)
 </error>
   </testcase>
-  <testcase name="testKeepsPreTextAtDepth" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testKeepsPreTextAtDepth" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testKeepsPreTextAtDepth(ElementTest.java:107)
 </error>
@@ -228,7 +228,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testGetElementsWithAttribute(ElementTest.java:200)
 </error>
   </testcase>
-  <testcase name="testNoIndentOnScriptAndStyle" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="testNoIndentOnScriptAndStyle" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testNoIndentOnScriptAndStyle(ElementTest.java:358)
 </error>
@@ -260,7 +260,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 </error>
   </testcase>
-  <testcase name="testKeepsPreTextInCode" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="testKeepsPreTextInCode" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testKeepsPreTextInCode(ElementTest.java:100)
 </error>
@@ -287,7 +287,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.getElementsByTagName(ElementTest.java:31)
 </error>
   </testcase>
-  <testcase name="testFormatHtml" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testFormatHtml" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testFormatHtml(ElementTest.java:325)
 </error>
@@ -322,12 +322,12 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testPrependRowToTable(ElementTest.java:425)
 </error>
   </testcase>
-  <testcase name="testGetTextNodes" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testGetTextNodes" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetTextNodes(ElementTest.java:705)
 </error>
   </testcase>
-  <testcase name="after" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="after" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.after(ElementTest.java:544)
 </error>
@@ -435,7 +435,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testNormalizesInvisiblesInText(ElementTest.java:1221)
 </error>
   </testcase>
-  <testcase name="insertChildrenAsCopy" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="insertChildrenAsCopy" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.insertChildrenAsCopy(ElementTest.java:849)
 </error>
@@ -460,12 +460,12 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testNormalizesNbspInText(ElementTest.java:1203)
 </error>
   </testcase>
-  <testcase name="testRemoveAfterIndex" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testRemoveAfterIndex" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testRemoveAfterIndex(ElementTest.java:1253)
 </error>
   </testcase>
-  <testcase name="testThrowsOnPrependNullText" classname="org.jsoup.nodes.ElementTest" time="0.001"/>
+  <testcase name="testThrowsOnPrependNullText" classname="org.jsoup.nodes.ElementTest" time="0"/>
   <testcase name="testGetSiblings" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetSiblings(ElementTest.java:133)
@@ -493,12 +493,12 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 </error>
   </testcase>
-  <testcase name="textHasSpaceAfterBlockTags" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="textHasSpaceAfterBlockTags" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.textHasSpaceAfterBlockTags(ElementTest.java:1324)
 </error>
   </testcase>
-  <testcase name="whiteSpaceClassElement" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="whiteSpaceClassElement" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.nodes.ElementTest.whiteSpaceClassElement(ElementTest.java:1270)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -535,12 +535,12 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.ElementTest.testNotPretty(ElementTest.java:342)
 </error>
   </testcase>
-  <testcase name="testNextElementSiblingAfterClone" classname="org.jsoup.nodes.ElementTest" time="0">
+  <testcase name="testNextElementSiblingAfterClone" classname="org.jsoup.nodes.ElementTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testNextElementSiblingAfterClone(ElementTest.java:1286)
 </error>
   </testcase>
-  <testcase name="testAppendTo" classname="org.jsoup.nodes.ElementTest" time="0.001">
+  <testcase name="testAppendTo" classname="org.jsoup.nodes.ElementTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testAppendTo(ElementTest.java:1184)
 </error>

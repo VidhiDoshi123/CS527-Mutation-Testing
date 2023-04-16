@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.XmlTreeBuilderTest" time="0.004" tests="23" errors="23" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.XmlTreeBuilderTest" time="0.005" tests="23" errors="23" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -75,7 +75,7 @@
 	at org.jsoup.parser.XmlTreeBuilderTest.dropsDuplicateAttributes(XmlTreeBuilderTest.java:254)
 </error>
   </testcase>
-  <testcase name="caseSensitiveDeclaration" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
+  <testcase name="caseSensitiveDeclaration" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.XmlTreeBuilderTest.caseSensitiveDeclaration(XmlTreeBuilderTest.java:166)
 </error>
@@ -95,7 +95,7 @@
 	at org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToJsoupClass(XmlTreeBuilderTest.java:66)
 </error>
   </testcase>
-  <testcase name="normalizesDiscordantTags" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
+  <testcase name="normalizesDiscordantTags" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.XmlTreeBuilderTest.normalizesDiscordantTags(XmlTreeBuilderTest.java:207)
 </error>
@@ -120,7 +120,7 @@
 	at org.jsoup.parser.XmlTreeBuilderTest.xmlFragment(XmlTreeBuilderTest.java:121)
 </error>
   </testcase>
-  <testcase name="appendPreservesCaseByDefault" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
+  <testcase name="appendPreservesCaseByDefault" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.XmlTreeBuilderTest.appendPreservesCaseByDefault(XmlTreeBuilderTest.java:192)
 </error>
@@ -136,7 +136,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.XmlTreeBuilderTest.roundTripsCdata(XmlTreeBuilderTest.java:214)
 </error>
   </testcase>
-  <testcase name="canNormalizeCase" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
+  <testcase name="canNormalizeCase" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.XmlTreeBuilderTest.canNormalizeCase(XmlTreeBuilderTest.java:201)
 </error>
@@ -156,7 +156,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.XmlTreeBuilderTest.testParseDeclarationAttributes(XmlTreeBuilderTest.java:154)
 </error>
   </testcase>
-  <testcase name="testSupplyParserToDataStream" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
+  <testcase name="testSupplyParserToDataStream" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.XmlTreeBuilderTest.testSupplyParserToDataStream(XmlTreeBuilderTest.java:95)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -167,7 +167,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.XmlTreeBuilderTest.xmlParseDefaultsToHtmlOutputSyntax(XmlTreeBuilderTest.java:130)
 </error>
   </testcase>
-  <testcase name="testCreatesValidProlog" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0">
+  <testcase name="testCreatesValidProlog" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.XmlTreeBuilderTest.testCreatesValidProlog(XmlTreeBuilderTest.java:172)
 </error>

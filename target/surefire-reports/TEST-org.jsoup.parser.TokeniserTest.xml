@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokeniserTest" time="0.006" tests="10" errors="9" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.TokeniserTest" time="0.005" tests="10" errors="9" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -65,7 +65,7 @@
 	at org.jsoup.parser.TokeniserTest.handleLargeComment(TokeniserTest.java:110)
 </error>
   </testcase>
-  <testcase name="handleLargeCdata" classname="org.jsoup.parser.TokeniserTest" time="0.001">
+  <testcase name="handleLargeCdata" classname="org.jsoup.parser.TokeniserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserTest.handleLargeCdata(TokeniserTest.java:128)
 </error>
@@ -75,7 +75,7 @@
 	at org.jsoup.parser.TokeniserTest.handleLargeTitle(TokeniserTest.java:147)
 </error>
   </testcase>
-  <testcase name="bufferUpInAttributeVal" classname="org.jsoup.parser.TokeniserTest" time="0">
+  <testcase name="bufferUpInAttributeVal" classname="org.jsoup.parser.TokeniserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserTest.bufferUpInAttributeVal(TokeniserTest.java:39)
 </error>
@@ -90,18 +90,18 @@
 	at org.jsoup.parser.TokeniserTest.handleSuperLargeTagNames(TokeniserTest.java:57)
 </error>
   </testcase>
-  <testcase name="handleSuperLargeAttributeName" classname="org.jsoup.parser.TokeniserTest" time="0">
+  <testcase name="handleSuperLargeAttributeName" classname="org.jsoup.parser.TokeniserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserTest.handleSuperLargeAttributeName(TokeniserTest.java:74)
 </error>
   </testcase>
-  <testcase name="cp1252SubstitutionTable" classname="org.jsoup.parser.TokeniserTest" time="0.004"/>
+  <testcase name="cp1252SubstitutionTable" classname="org.jsoup.parser.TokeniserTest" time="0.002"/>
   <testcase name="cp1252Entities" classname="org.jsoup.parser.TokeniserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserTest.cp1252Entities(TokeniserTest.java:160)
 </error>
   </testcase>
-  <testcase name="handleLargeText" classname="org.jsoup.parser.TokeniserTest" time="0">
+  <testcase name="handleLargeText" classname="org.jsoup.parser.TokeniserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserTest.handleLargeText(TokeniserTest.java:93)
 </error>

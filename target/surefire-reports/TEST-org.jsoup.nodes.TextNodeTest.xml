@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.TextNodeTest" time="0.017" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.TextNodeTest" time="0.018" tests="6" errors="6" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -60,7 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testWithSupplementaryCharacter" classname="org.jsoup.nodes.TextNodeTest" time="0.004">
+  <testcase name="testWithSupplementaryCharacter" classname="org.jsoup.nodes.TextNodeTest" time="0.005">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testWithSupplementaryCharacter(TextNodeTest.java:73)
 </error>
@@ -80,12 +80,12 @@
 	at org.jsoup.nodes.TextNodeTest.testTextBean(TextNodeTest.java:31)
 </error>
   </testcase>
-  <testcase name="testSplitText" classname="org.jsoup.nodes.TextNodeTest" time="0">
+  <testcase name="testSplitText" classname="org.jsoup.nodes.TextNodeTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testSplitText(TextNodeTest.java:51)
 </error>
   </testcase>
-  <testcase name="testSplitAnEmbolden" classname="org.jsoup.nodes.TextNodeTest" time="0.001">
+  <testcase name="testSplitAnEmbolden" classname="org.jsoup.nodes.TextNodeTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testSplitAnEmbolden(TextNodeTest.java:63)
 </error>

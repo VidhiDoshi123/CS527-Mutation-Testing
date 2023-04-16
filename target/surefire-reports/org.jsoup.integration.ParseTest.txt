@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.integration.ParseTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.jsoup.integration.ParseTest
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.integration.ParseTest
 testYahooJp(org.jsoup.integration.ParseTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testYahooJp(ParseTest.java:85)
@@ -32,12 +32,12 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testSmhBizArticle(ParseTest.java:24)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-testYahooArticle(org.jsoup.integration.ParseTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testYahooArticle(org.jsoup.integration.ParseTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testYahooArticle(ParseTest.java:172)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-testBrokenHtml5CharsetWithASingleDoubleQuote(org.jsoup.integration.ParseTest)  Time elapsed: 0 sec  <<< ERROR!
+testBrokenHtml5CharsetWithASingleDoubleQuote(org.jsoup.integration.ParseTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testBrokenHtml5CharsetWithASingleDoubleQuote(ParseTest.java:155)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -47,7 +47,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testNytArticle(ParseTest.java:163)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-testLowercaseUtf8Charset(org.jsoup.integration.ParseTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testLowercaseUtf8Charset(org.jsoup.integration.ParseTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testLowercaseUtf8Charset(ParseTest.java:180)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -57,7 +57,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testNewsHomepage(ParseTest.java:39)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-testHtml5Charset(org.jsoup.integration.ParseTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testHtml5Charset(org.jsoup.integration.ParseTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testHtml5Charset(ParseTest.java:132)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]

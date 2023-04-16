@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.CharacterReaderTest" time="0.002" tests="23" errors="23" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.CharacterReaderTest" time="0.004" tests="23" errors="23" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -70,7 +70,7 @@
 	at org.jsoup.parser.CharacterReaderTest.unconsume(CharacterReaderTest.java:37)
 </error>
   </testcase>
-  <testcase name="bufferUp" classname="org.jsoup.parser.CharacterReaderTest" time="0">
+  <testcase name="bufferUp" classname="org.jsoup.parser.CharacterReaderTest" time="0.001">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.bufferUp(CharacterReaderTest.java:299)
 </error>
@@ -115,7 +115,7 @@
 	at org.jsoup.parser.CharacterReaderTest.consumeToEnd(CharacterReaderTest.java:72)
 </error>
   </testcase>
-  <testcase name="consumeToNonexistentEndWhenAtAnd" classname="org.jsoup.parser.CharacterReaderTest" time="0.001">
+  <testcase name="consumeToNonexistentEndWhenAtAnd" classname="org.jsoup.parser.CharacterReaderTest" time="0">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.consumeToNonexistentEndWhenAtAnd(CharacterReaderTest.java:267)
 </error>
@@ -130,7 +130,7 @@
 	at org.jsoup.parser.CharacterReaderTest.mark(CharacterReaderTest.java:60)
 </error>
   </testcase>
-  <testcase name="empty" classname="org.jsoup.parser.CharacterReaderTest" time="0">
+  <testcase name="empty" classname="org.jsoup.parser.CharacterReaderTest" time="0.001">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.empty(CharacterReaderTest.java:256)
 </error>
@@ -140,7 +140,7 @@
 	at org.jsoup.parser.CharacterReaderTest.cachesStrings(CharacterReaderTest.java:215)
 </error>
   </testcase>
-  <testcase name="consumeLetterThenDigitSequence" classname="org.jsoup.parser.CharacterReaderTest" time="0.001">
+  <testcase name="consumeLetterThenDigitSequence" classname="org.jsoup.parser.CharacterReaderTest" time="0">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.consumeLetterThenDigitSequence(CharacterReaderTest.java:155)
 </error>

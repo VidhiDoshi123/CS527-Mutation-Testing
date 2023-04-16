@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.parser.CharacterReaderTest
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 0, Errors: 23, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.parser.CharacterReaderTest
+Tests run: 23, Failures: 0, Errors: 23, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in org.jsoup.parser.CharacterReaderTest
 nextIndexOfUnmatched(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.nextIndexOfUnmatched(CharacterReaderTest.java:105)
@@ -10,7 +10,7 @@ unconsume(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.unconsume(CharacterReaderTest.java:37)
 
-bufferUp(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
+bufferUp(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.bufferUp(CharacterReaderTest.java:299)
 
@@ -46,7 +46,7 @@ consumeToEnd(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERR
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.consumeToEnd(CharacterReaderTest.java:72)
 
-consumeToNonexistentEndWhenAtAnd(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0.001 sec  <<< ERROR!
+consumeToNonexistentEndWhenAtAnd(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.consumeToNonexistentEndWhenAtAnd(CharacterReaderTest.java:267)
 
@@ -58,7 +58,7 @@ mark(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.mark(CharacterReaderTest.java:60)
 
-empty(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
+empty(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.empty(CharacterReaderTest.java:256)
 
@@ -66,7 +66,7 @@ cachesStrings(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ER
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.cachesStrings(CharacterReaderTest.java:215)
 
-consumeLetterThenDigitSequence(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0.001 sec  <<< ERROR!
+consumeLetterThenDigitSequence(org.jsoup.parser.CharacterReaderTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.CharacterReaderTest.consumeLetterThenDigitSequence(CharacterReaderTest.java:155)
 

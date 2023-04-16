@@ -22,7 +22,7 @@ java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentExc
 	at org.jsoup.parser.TagTest.valueOfChecksNotEmpty(TagTest.java:76)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-pSemantics(org.jsoup.parser.TagTest)  Time elapsed: 0 sec  <<< ERROR!
+pSemantics(org.jsoup.parser.TagTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.pSemantics(TagTest.java:49)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -47,7 +47,7 @@ java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentExc
 	at org.jsoup.parser.TagTest.valueOfChecksNotNull(TagTest.java:72)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-isCaseSensitive(org.jsoup.parser.TagTest)  Time elapsed: 0.001 sec  <<< ERROR!
+isCaseSensitive(org.jsoup.parser.TagTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.isCaseSensitive(TagTest.java:17)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]

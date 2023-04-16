@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.TextNodeTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.017 sec <<< FAILURE! - in org.jsoup.nodes.TextNodeTest
-testWithSupplementaryCharacter(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0.004 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE! - in org.jsoup.nodes.TextNodeTest
+testWithSupplementaryCharacter(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0.005 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testWithSupplementaryCharacter(TextNodeTest.java:73)
 
@@ -18,11 +18,11 @@ testTextBean(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testTextBean(TextNodeTest.java:31)
 
-testSplitText(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0 sec  <<< ERROR!
+testSplitText(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testSplitText(TextNodeTest.java:51)
 
-testSplitAnEmbolden(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSplitAnEmbolden(org.jsoup.nodes.TextNodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.TextNodeTest.testSplitAnEmbolden(TextNodeTest.java:63)
 

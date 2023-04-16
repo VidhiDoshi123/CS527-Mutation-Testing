@@ -84,7 +84,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 ]]></error>
   </testcase>
-  <testcase name="pSemantics" classname="org.jsoup.parser.TagTest" time="0">
+  <testcase name="pSemantics" classname="org.jsoup.parser.TagTest" time="0.001">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.pSemantics(TagTest.java:49)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -114,7 +114,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 ]]></error>
   </testcase>
-  <testcase name="isCaseSensitive" classname="org.jsoup.parser.TagTest" time="0.001">
+  <testcase name="isCaseSensitive" classname="org.jsoup.parser.TagTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.isCaseSensitive(TagTest.java:17)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]

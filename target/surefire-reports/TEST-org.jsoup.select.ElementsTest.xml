@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.select.ElementsTest" time="0.001" tests="34" errors="34" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.select.ElementsTest" time="0.003" tests="34" errors="34" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -125,7 +125,7 @@
 	at org.jsoup.select.ElementsTest.is(ElementsTest.java:236)
 </error>
   </testcase>
-  <testcase name="not" classname="org.jsoup.select.ElementsTest" time="0">
+  <testcase name="not" classname="org.jsoup.select.ElementsTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.ElementsTest.not(ElementsTest.java:253)
 </error>
@@ -190,7 +190,7 @@
 	at org.jsoup.select.ElementsTest.hasAttr(ElementsTest.java:51)
 </error>
   </testcase>
-  <testcase name="hasText" classname="org.jsoup.select.ElementsTest" time="0">
+  <testcase name="hasText" classname="org.jsoup.select.ElementsTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.ElementsTest.hasText(ElementsTest.java:121)
 </error>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.HttpConnectionTest" time="0.005" tests="23" errors="15" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.HttpConnectionTest" time="0.004" tests="23" errors="15" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -60,7 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="throwsExceptionOnParseWithoutExecute" classname="org.jsoup.helper.HttpConnectionTest" time="0.002"/>
+  <testcase name="throwsExceptionOnParseWithoutExecute" classname="org.jsoup.helper.HttpConnectionTest" time="0.001"/>
   <testcase name="connectWithUrl" classname="org.jsoup.helper.HttpConnectionTest" time="0">
     <error message="String must not be empty" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String must not be empty
 	at org.jsoup.helper.HttpConnectionTest.connectWithUrl(HttpConnectionTest.java:159)
@@ -88,7 +88,7 @@
 	at org.jsoup.helper.HttpConnectionTest.method(HttpConnectionTest.java:188)
 </error>
   </testcase>
-  <testcase name="handlesHeaderEncodingOnRequest" classname="org.jsoup.helper.HttpConnectionTest" time="0">
+  <testcase name="handlesHeaderEncodingOnRequest" classname="org.jsoup.helper.HttpConnectionTest" time="0.001">
     <error message="String must not be empty" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String must not be empty
 	at org.jsoup.helper.HttpConnectionTest.handlesHeaderEncodingOnRequest(HttpConnectionTest.java:255)
 </error>

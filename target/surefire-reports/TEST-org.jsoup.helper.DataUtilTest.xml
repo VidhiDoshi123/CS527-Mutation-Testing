@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.DataUtilTest" time="0.007" tests="15" errors="9" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.DataUtilTest" time="0.009" tests="15" errors="9" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -66,13 +66,13 @@
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="secondMetaElementWithContentTypeContainsCharsetParameter" classname="org.jsoup.helper.DataUtilTest" time="0.005">
+  <testcase name="secondMetaElementWithContentTypeContainsCharsetParameter" classname="org.jsoup.helper.DataUtilTest" time="0.008">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.secondMetaElementWithContentTypeContainsCharsetParameter(DataUtilTest.java:120)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="supportsUTF8BOM" classname="org.jsoup.helper.DataUtilTest" time="0.001">
+  <testcase name="supportsUTF8BOM" classname="org.jsoup.helper.DataUtilTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.supportsUTF8BOM(DataUtilTest.java:164)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]

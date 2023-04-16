@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.FormElementTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.nodes.FormElementTest
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.jsoup.nodes.FormElementTest
 createsFormData(org.jsoup.nodes.FormElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.FormElementTest.createsFormData(FormElementTest.java:35)
@@ -18,7 +18,7 @@ formsAddedAfterParseAreFormElements(org.jsoup.nodes.FormElementTest)  Time elaps
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.FormElementTest.formsAddedAfterParseAreFormElements(FormElementTest.java:103)
 
-createsSubmitableConnection(org.jsoup.nodes.FormElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+createsSubmitableConnection(org.jsoup.nodes.FormElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.FormElementTest.createsSubmitableConnection(FormElementTest.java:60)
 

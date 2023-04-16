@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.integration.ParseTest" time="0.003" tests="12" errors="12" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.integration.ParseTest" time="0.002" tests="12" errors="12" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -96,13 +96,13 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="testYahooArticle" classname="org.jsoup.integration.ParseTest" time="0.001">
+  <testcase name="testYahooArticle" classname="org.jsoup.integration.ParseTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testYahooArticle(ParseTest.java:172)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="testBrokenHtml5CharsetWithASingleDoubleQuote" classname="org.jsoup.integration.ParseTest" time="0">
+  <testcase name="testBrokenHtml5CharsetWithASingleDoubleQuote" classname="org.jsoup.integration.ParseTest" time="0.001">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testBrokenHtml5CharsetWithASingleDoubleQuote(ParseTest.java:155)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -114,7 +114,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="testLowercaseUtf8Charset" classname="org.jsoup.integration.ParseTest" time="0.001">
+  <testcase name="testLowercaseUtf8Charset" classname="org.jsoup.integration.ParseTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testLowercaseUtf8Charset(ParseTest.java:180)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -126,7 +126,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="testHtml5Charset" classname="org.jsoup.integration.ParseTest" time="0.001">
+  <testcase name="testHtml5Charset" classname="org.jsoup.integration.ParseTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.integration.ParseTest.testHtml5Charset(ParseTest.java:132)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
