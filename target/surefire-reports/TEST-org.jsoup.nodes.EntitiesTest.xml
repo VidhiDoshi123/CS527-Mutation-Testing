@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.EntitiesTest" time="0.001" tests="15" errors="15" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.nodes.EntitiesTest" time="0.002" tests="15" errors="15" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -33,7 +33,6 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="13.1"/>
     <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.7/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/aparna"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -57,8 +56,6 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="strictUnescape" classname="org.jsoup.nodes.EntitiesTest" time="0">
     <error type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
@@ -107,7 +104,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionI
 	at org.jsoup.nodes.EntitiesTest.strictUnescape(EntitiesTest.java:102)
 </error>
   </testcase>
-  <testcase name="notMissingMultis" classname="org.jsoup.nodes.EntitiesTest" time="0">
+  <testcase name="notMissingMultis" classname="org.jsoup.nodes.EntitiesTest" time="0.002">
     <error message="Could not initialize class org.jsoup.nodes.Entities" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.nodes.Entities
 	at org.jsoup.nodes.EntitiesTest.notMissingMultis(EntitiesTest.java:84)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
@@ -154,7 +151,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.nodes.EntitiesTest.letterDigitEntities(EntitiesTest.java:126)
 </error>
   </testcase>
-  <testcase name="unescapeMultiChars" classname="org.jsoup.nodes.EntitiesTest" time="0.001">
+  <testcase name="unescapeMultiChars" classname="org.jsoup.nodes.EntitiesTest" time="0">
     <error message="Could not initialize class org.jsoup.nodes.Entities" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.nodes.Entities
 	at org.jsoup.nodes.EntitiesTest.unescapeMultiChars(EntitiesTest.java:47)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]

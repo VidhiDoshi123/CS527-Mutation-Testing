@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.select.CssTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in org.jsoup.select.CssTest
-nthLastOfType_advanced(org.jsoup.select.CssTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.select.CssTest
+nthLastOfType_advanced(org.jsoup.select.CssTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.CssTest.init(CssTest.java:49)
 

@@ -22,7 +22,7 @@ method(org.jsoup.helper.HttpConnectionTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String must not be empty
 	at org.jsoup.helper.HttpConnectionTest.method(HttpConnectionTest.java:188)
 
-handlesHeaderEncodingOnRequest(org.jsoup.helper.HttpConnectionTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesHeaderEncodingOnRequest(org.jsoup.helper.HttpConnectionTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String must not be empty
 	at org.jsoup.helper.HttpConnectionTest.handlesHeaderEncodingOnRequest(HttpConnectionTest.java:255)
 

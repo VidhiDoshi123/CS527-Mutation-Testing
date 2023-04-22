@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.HtmlParserTest" time="0.021" tests="132" errors="132" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.parser.HtmlParserTest" time="0.019" tests="132" errors="132" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -33,7 +33,6 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="13.1"/>
     <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.7/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/aparna"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -57,8 +56,6 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="preservedCaseLinksCantNest" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
@@ -90,7 +87,7 @@
 	at org.jsoup.parser.HtmlParserTest.canPreserveAttributeCase(HtmlParserTest.java:1113)
 </error>
   </testcase>
-  <testcase name="handlesNullInComments" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesNullInComments" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesNullInComments(HtmlParserTest.java:806)
 </error>
@@ -150,7 +147,7 @@
 	at org.jsoup.parser.HtmlParserTest.canPreserveTagCase(HtmlParserTest.java:1102)
 </error>
   </testcase>
-  <testcase name="preservesSpaceInScript" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="preservesSpaceInScript" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.preservesSpaceInScript(HtmlParserTest.java:235)
 </error>
@@ -201,7 +198,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.handlesWhatWgExpensesTableExample(HtmlParserTest.java:279)
 </error>
   </testcase>
-  <testcase name="handlesImplicitCaptionClose" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesImplicitCaptionClose" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesImplicitCaptionClose(HtmlParserTest.java:289)
 </error>
@@ -257,7 +254,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.caseInsensitiveParseTree(HtmlParserTest.java:1148)
 </error>
   </testcase>
-  <testcase name="handleNullContextInParseFragment" classname="org.jsoup.parser.HtmlParserTest" time="0.003">
+  <testcase name="handleNullContextInParseFragment" classname="org.jsoup.parser.HtmlParserTest" time="0.002">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handleNullContextInParseFragment(HtmlParserTest.java:880)
 </error>
@@ -272,7 +269,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.emptyTdTag(HtmlParserTest.java:717)
 </error>
   </testcase>
-  <testcase name="caseSensitiveParseTree" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="caseSensitiveParseTree" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.caseSensitiveParseTree(HtmlParserTest.java:1141)
 </error>
@@ -317,7 +314,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.commentBeforeHtml(HtmlParserTest.java:711)
 </error>
   </testcase>
-  <testcase name="handlesUnclosedCdataAtEOF" classname="org.jsoup.parser.HtmlParserTest" time="0">
+  <testcase name="handlesUnclosedCdataAtEOF" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedCdataAtEOF(HtmlParserTest.java:387)
 </error>
@@ -332,7 +329,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.handlesKnownEmptyBlocks(HtmlParserTest.java:456)
 </error>
   </testcase>
-  <testcase name="createsFormElements" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="createsFormElements" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.createsFormElements(HtmlParserTest.java:917)
 </error>
@@ -377,13 +374,13 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.handlesKnownEmptyIframe(HtmlParserTest.java:480)
 </error>
   </testcase>
-  <testcase name="characterReaderBuffer" classname="org.jsoup.parser.HtmlParserTest" time="0">
+  <testcase name="characterReaderBuffer" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.characterReaderBuffer(HtmlParserTest.java:1249)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="testTemplateInsideTable" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="testTemplateInsideTable" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.testTemplateInsideTable(HtmlParserTest.java:1190)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -449,12 +446,12 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.handlesCommentsInTable(HtmlParserTest.java:860)
 </error>
   </testcase>
-  <testcase name="handlesEscapedScript" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesEscapedScript" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesEscapedScript(HtmlParserTest.java:791)
 </error>
   </testcase>
-  <testcase name="testInvalidTableContents" classname="org.jsoup.parser.HtmlParserTest" time="0">
+  <testcase name="testInvalidTableContents" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.testInvalidTableContents(HtmlParserTest.java:1028)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -515,7 +512,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.roundTripsCdata(HtmlParserTest.java:343)
 </error>
   </testcase>
-  <testcase name="handlesManyChildren" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesManyChildren" classname="org.jsoup.parser.HtmlParserTest" time="0.002">
     <error message="Object must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesManyChildren(HtmlParserTest.java:991)
 </error>
@@ -560,7 +557,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.testUsingSingleQuotesInQueries(HtmlParserTest.java:1053)
 </error>
   </testcase>
-  <testcase name="handlesUnclosedDefinitionLists" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesUnclosedDefinitionLists" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedDefinitionLists(HtmlParserTest.java:501)
 </error>
@@ -585,7 +582,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.testNoImagesInNoScriptInHead(HtmlParserTest.java:607)
 </error>
   </testcase>
-  <testcase name="handlesBaseWithoutHref" classname="org.jsoup.parser.HtmlParserTest" time="0">
+  <testcase name="handlesBaseWithoutHref" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesBaseWithoutHref(HtmlParserTest.java:544)
 </error>
@@ -640,7 +637,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.relaxedBaseEntityMatchAndStrictExtendedMatch(HtmlParserTest.java:897)
 </error>
   </testcase>
-  <testcase name="handlesUnclosedFormattingElements" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
+  <testcase name="handlesUnclosedFormattingElements" classname="org.jsoup.parser.HtmlParserTest" time="0">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedFormattingElements(HtmlParserTest.java:663)
 </error>
@@ -660,7 +657,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.parser.HtmlParserTest.discardsNakedTds(HtmlParserTest.java:267)
 </error>
   </testcase>
-  <testcase name="parsesComments" classname="org.jsoup.parser.HtmlParserTest" time="0">
+  <testcase name="parsesComments" classname="org.jsoup.parser.HtmlParserTest" time="0.001">
     <error message="String input must not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.parsesComments(HtmlParserTest.java:93)
 </error>

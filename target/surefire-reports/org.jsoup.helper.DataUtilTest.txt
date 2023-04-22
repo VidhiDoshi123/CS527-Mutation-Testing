@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.helper.DataUtilTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 4, Errors: 9, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE! - in org.jsoup.helper.DataUtilTest
+Tests run: 15, Failures: 4, Errors: 9, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE! - in org.jsoup.helper.DataUtilTest
 firstMetaElementWithCharsetShouldBeUsedForDecoding(org.jsoup.helper.DataUtilTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.firstMetaElementWithCharsetShouldBeUsedForDecoding(DataUtilTest.java:132)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-secondMetaElementWithContentTypeContainsCharsetParameter(org.jsoup.helper.DataUtilTest)  Time elapsed: 0.008 sec  <<< ERROR!
+secondMetaElementWithContentTypeContainsCharsetParameter(org.jsoup.helper.DataUtilTest)  Time elapsed: 0.009 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.secondMetaElementWithContentTypeContainsCharsetParameter(DataUtilTest.java:120)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-supportsUTF8BOM(org.jsoup.helper.DataUtilTest)  Time elapsed: 0 sec  <<< ERROR!
+supportsUTF8BOM(org.jsoup.helper.DataUtilTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.supportsUTF8BOM(DataUtilTest.java:164)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -39,7 +39,7 @@ testCharset(org.jsoup.helper.DataUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<utf-8> but was:<null>
 	at org.jsoup.helper.DataUtilTest.testCharset(DataUtilTest.java:24)
 
-supportsBOMinFiles(org.jsoup.helper.DataUtilTest)  Time elapsed: 0.001 sec  <<< ERROR!
+supportsBOMinFiles(org.jsoup.helper.DataUtilTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.supportsBOMinFiles(DataUtilTest.java:141)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -53,7 +53,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.wrongMetaCharsetFallback(DataUtilTest.java:101)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags(org.jsoup.helper.DataUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
+shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags(org.jsoup.helper.DataUtilTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<ISO-8859-1> but was:<null>
 	at org.jsoup.helper.DataUtilTest.shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags(DataUtilTest.java:74)
 

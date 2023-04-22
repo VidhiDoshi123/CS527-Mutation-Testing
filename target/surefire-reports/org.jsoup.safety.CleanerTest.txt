@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.safety.CleanerTest
 -------------------------------------------------------------------------------
-Tests run: 34, Failures: 0, Errors: 33, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in org.jsoup.safety.CleanerTest
+Tests run: 34, Failures: 0, Errors: 33, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.safety.CleanerTest
 testHandlesEmptyAttributes(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.testHandlesEmptyAttributes(CleanerTest.java:156)
@@ -22,7 +22,7 @@ handlesNoHrefAttribute(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< E
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.handlesNoHrefAttribute(CleanerTest.java:311)
 
-preservesRelativeLinksIfConfigured(org.jsoup.safety.CleanerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+preservesRelativeLinksIfConfigured(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.preservesRelativeLinksIfConfigured(CleanerTest.java:202)
 
@@ -82,7 +82,7 @@ simpleBehaviourTest(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERRO
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.simpleBehaviourTest(CleanerTest.java:23)
 
-handlesAttributesWithNoValue(org.jsoup.safety.CleanerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesAttributesWithNoValue(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.handlesAttributesWithNoValue(CleanerTest.java:304)
 
@@ -118,7 +118,7 @@ testDropXmlProc(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.testDropXmlProc(CleanerTest.java:104)
 
-testIsValidDocument(org.jsoup.safety.CleanerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testIsValidDocument(org.jsoup.safety.CleanerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.safety.CleanerTest.testIsValidDocument(CleanerTest.java:186)
 

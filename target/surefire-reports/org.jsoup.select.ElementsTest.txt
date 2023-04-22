@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.select.ElementsTest
 -------------------------------------------------------------------------------
-Tests run: 34, Failures: 0, Errors: 34, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.jsoup.select.ElementsTest
+Tests run: 34, Failures: 0, Errors: 34, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.select.ElementsTest
 classWithHyphen(org.jsoup.select.ElementsTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.ElementsTest.classWithHyphen(ElementsTest.java:302)
@@ -54,7 +54,7 @@ is(org.jsoup.select.ElementsTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.ElementsTest.is(ElementsTest.java:236)
 
-not(org.jsoup.select.ElementsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+not(org.jsoup.select.ElementsTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.ElementsTest.not(ElementsTest.java:253)
 

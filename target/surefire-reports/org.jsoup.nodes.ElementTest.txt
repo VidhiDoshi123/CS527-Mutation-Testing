@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.ElementTest
 -------------------------------------------------------------------------------
-Tests run: 99, Failures: 0, Errors: 97, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE! - in org.jsoup.nodes.ElementTest
+Tests run: 99, Failures: 0, Errors: 97, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE! - in org.jsoup.nodes.ElementTest
 testFormatOutline(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testFormatOutline(ElementTest.java:330)
@@ -14,7 +14,7 @@ insertChildrenArgumentValidation(org.jsoup.nodes.ElementTest)  Time elapsed: 0 s
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.insertChildrenArgumentValidation(ElementTest.java:794)
 
-testPrependElement(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testPrependElement(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testPrependElement(ElementTest.java:439)
 
@@ -22,7 +22,7 @@ testOuterHtml(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testOuterHtml(ElementTest.java:314)
 
-testHashcodeIsStableWithContentChanges(org.jsoup.nodes.ElementTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testHashcodeIsStableWithContentChanges(org.jsoup.nodes.ElementTest)  Time elapsed: 0.003 sec  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 Caused by: java.lang.IllegalArgumentException: Object must not be null
@@ -38,7 +38,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 
-testClonesClassnames(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testClonesClassnames(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClonesClassnames(ElementTest.java:634)
 
@@ -56,11 +56,11 @@ testRemoveBeforeIndex(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERR
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testRemoveBeforeIndex(ElementTest.java:1236)
 
-testChainedRemoveAttributes(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testChainedRemoveAttributes(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testChainedRemoveAttributes(ElementTest.java:1022)
 
-booleanAttributeOutput(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+booleanAttributeOutput(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.booleanAttributeOutput(ElementTest.java:1316)
 
@@ -80,7 +80,7 @@ testGetElementById(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetElementById(ElementTest.java:60)
 
-testClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClone(ElementTest.java:614)
 
@@ -126,11 +126,11 @@ testLoopedRemoveAttributes(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testLoopedRemoveAttributes(ElementTest.java:1037)
 
-testShadowElementsAreUpdated(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testShadowElementsAreUpdated(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testShadowElementsAreUpdated(ElementTest.java:1105)
 
-testKeepsPreTextAtDepth(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testKeepsPreTextAtDepth(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testKeepsPreTextAtDepth(ElementTest.java:107)
 
@@ -150,7 +150,7 @@ testGetElementsWithClass(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< 
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetElementsWithClass(ElementTest.java:183)
 
-testShallowClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testShallowClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testShallowClone(ElementTest.java:660)
 
@@ -210,11 +210,11 @@ testChildThrowsIndexOutOfBoundsOnMissing(org.jsoup.nodes.ElementTest)  Time elap
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testChildThrowsIndexOutOfBoundsOnMissing(ElementTest.java:759)
 
-testPrependRowToTable(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testPrependRowToTable(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testPrependRowToTable(ElementTest.java:425)
 
-testGetTextNodes(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testGetTextNodes(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetTextNodes(ElementTest.java:705)
 
@@ -240,11 +240,11 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 
-textHasSpaceBetweenDivAndCenterTags(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+textHasSpaceBetweenDivAndCenterTags(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.textHasSpaceBetweenDivAndCenterTags(ElementTest.java:1330)
 
-testGetDataNodes(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testGetDataNodes(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetDataNodes(ElementTest.java:730)
 
@@ -268,11 +268,11 @@ testNormalisesText(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testNormalisesText(ElementTest.java:87)
 
-testClassUpdates(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testClassUpdates(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testClassUpdates(ElementTest.java:301)
 
-testAddNewElement(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testAddNewElement(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testAddNewElement(ElementTest.java:381)
 
@@ -296,7 +296,7 @@ testSetIndent(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testSetIndent(ElementTest.java:336)
 
-testGetSiblingsWithDuplicateContent(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetSiblingsWithDuplicateContent(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testGetSiblingsWithDuplicateContent(ElementTest.java:143)
 
@@ -350,7 +350,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 	at org.jsoup.nodes.ElementTest.testHashcodeIsStableWithContentChanges(ElementTest.java:999)
 
-textHasSpaceAfterBlockTags(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+textHasSpaceAfterBlockTags(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.textHasSpaceAfterBlockTags(ElementTest.java:1324)
 
@@ -368,7 +368,7 @@ testPrependNewHtml(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testPrependNewHtml(ElementTest.java:487)
 
-testRemovingEmptyClassAttributeWhenLastClassRemoved(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+testRemovingEmptyClassAttributeWhenLastClassRemoved(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testRemovingEmptyClassAttributeWhenLastClassRemoved(ElementTest.java:1307)
 
@@ -384,7 +384,7 @@ testNotPretty(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testNotPretty(ElementTest.java:342)
 
-testNextElementSiblingAfterClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testNextElementSiblingAfterClone(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testNextElementSiblingAfterClone(ElementTest.java:1286)
 
@@ -400,7 +400,7 @@ testTraverse(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.testTraverse(ElementTest.java:1445)
 
-insertChildrenAtPosition(org.jsoup.nodes.ElementTest)  Time elapsed: 0 sec  <<< ERROR!
+insertChildrenAtPosition(org.jsoup.nodes.ElementTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.ElementTest.insertChildrenAtPosition(ElementTest.java:819)
 

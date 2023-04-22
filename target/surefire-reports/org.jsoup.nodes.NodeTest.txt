@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.NodeTest
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 0, Errors: 25, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.jsoup.nodes.NodeTest
+Tests run: 25, Failures: 0, Errors: 25, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.nodes.NodeTest
 handlesAbsOnProtocolessAbsoluteUris(org.jsoup.nodes.NodeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.NodeTest.handlesAbsOnProtocolessAbsoluteUris(NodeTest.java:102)

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.parser.HtmlParserTest
 -------------------------------------------------------------------------------
-Tests run: 132, Failures: 0, Errors: 132, Skipped: 0, Time elapsed: 0.021 sec <<< FAILURE! - in org.jsoup.parser.HtmlParserTest
+Tests run: 132, Failures: 0, Errors: 132, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE! - in org.jsoup.parser.HtmlParserTest
 preservedCaseLinksCantNest(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.preservedCaseLinksCantNest(HtmlParserTest.java:1156)
@@ -26,7 +26,7 @@ canPreserveAttributeCase(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.canPreserveAttributeCase(HtmlParserTest.java:1113)
 
-handlesNullInComments(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesNullInComments(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesNullInComments(HtmlParserTest.java:806)
 
@@ -74,7 +74,7 @@ canPreserveTagCase(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ER
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.canPreserveTagCase(HtmlParserTest.java:1102)
 
-preservesSpaceInScript(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+preservesSpaceInScript(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.preservesSpaceInScript(HtmlParserTest.java:235)
 
@@ -115,7 +115,7 @@ handlesWhatWgExpensesTableExample(org.jsoup.parser.HtmlParserTest)  Time elapsed
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesWhatWgExpensesTableExample(HtmlParserTest.java:279)
 
-handlesImplicitCaptionClose(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesImplicitCaptionClose(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesImplicitCaptionClose(HtmlParserTest.java:289)
 
@@ -160,7 +160,7 @@ caseInsensitiveParseTree(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.caseInsensitiveParseTree(HtmlParserTest.java:1148)
 
-handleNullContextInParseFragment(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.003 sec  <<< ERROR!
+handleNullContextInParseFragment(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handleNullContextInParseFragment(HtmlParserTest.java:880)
 
@@ -172,7 +172,7 @@ emptyTdTag(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.emptyTdTag(HtmlParserTest.java:717)
 
-caseSensitiveParseTree(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+caseSensitiveParseTree(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.caseSensitiveParseTree(HtmlParserTest.java:1141)
 
@@ -208,7 +208,7 @@ commentBeforeHtml(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERR
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.commentBeforeHtml(HtmlParserTest.java:711)
 
-handlesUnclosedCdataAtEOF(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
+handlesUnclosedCdataAtEOF(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedCdataAtEOF(HtmlParserTest.java:387)
 
@@ -220,7 +220,7 @@ handlesKnownEmptyBlocks(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesKnownEmptyBlocks(HtmlParserTest.java:456)
 
-createsFormElements(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+createsFormElements(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.createsFormElements(HtmlParserTest.java:917)
 
@@ -256,12 +256,12 @@ handlesKnownEmptyIframe(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesKnownEmptyIframe(HtmlParserTest.java:480)
 
-characterReaderBuffer(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
+characterReaderBuffer(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.characterReaderBuffer(HtmlParserTest.java:1249)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-testTemplateInsideTable(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testTemplateInsideTable(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.testTemplateInsideTable(HtmlParserTest.java:1190)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -314,11 +314,11 @@ handlesCommentsInTable(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesCommentsInTable(HtmlParserTest.java:860)
 
-handlesEscapedScript(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesEscapedScript(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesEscapedScript(HtmlParserTest.java:791)
 
-testInvalidTableContents(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
+testInvalidTableContents(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.HtmlParserTest.testInvalidTableContents(HtmlParserTest.java:1028)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -367,7 +367,7 @@ roundTripsCdata(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.roundTripsCdata(HtmlParserTest.java:343)
 
-handlesManyChildren(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesManyChildren(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesManyChildren(HtmlParserTest.java:991)
 
@@ -403,7 +403,7 @@ testUsingSingleQuotesInQueries(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.testUsingSingleQuotesInQueries(HtmlParserTest.java:1053)
 
-handlesUnclosedDefinitionLists(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesUnclosedDefinitionLists(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedDefinitionLists(HtmlParserTest.java:501)
 
@@ -423,7 +423,7 @@ testNoImagesInNoScriptInHead(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 s
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.testNoImagesInNoScriptInHead(HtmlParserTest.java:607)
 
-handlesBaseWithoutHref(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
+handlesBaseWithoutHref(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesBaseWithoutHref(HtmlParserTest.java:544)
 
@@ -467,7 +467,7 @@ relaxedBaseEntityMatchAndStrictExtendedMatch(org.jsoup.parser.HtmlParserTest)  T
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.relaxedBaseEntityMatchAndStrictExtendedMatch(HtmlParserTest.java:897)
 
-handlesUnclosedFormattingElements(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
+handlesUnclosedFormattingElements(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.handlesUnclosedFormattingElements(HtmlParserTest.java:663)
 
@@ -483,7 +483,7 @@ discardsNakedTds(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERRO
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.discardsNakedTds(HtmlParserTest.java:267)
 
-parsesComments(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0 sec  <<< ERROR!
+parsesComments(org.jsoup.parser.HtmlParserTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.HtmlParserTest.parsesComments(HtmlParserTest.java:93)
 

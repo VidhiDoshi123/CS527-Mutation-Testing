@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.select.SelectorTest
 -------------------------------------------------------------------------------
-Tests run: 62, Failures: 0, Errors: 62, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.jsoup.select.SelectorTest
+Tests run: 62, Failures: 0, Errors: 62, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in org.jsoup.select.SelectorTest
 containsData(org.jsoup.select.SelectorTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.SelectorTest.containsData(SelectorTest.java:727)
@@ -194,11 +194,11 @@ testPseudoContains(org.jsoup.select.SelectorTest)  Time elapsed: 0 sec  <<< ERRO
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.SelectorTest.testPseudoContains(SelectorTest.java:534)
 
-testPseudoHas(org.jsoup.select.SelectorTest)  Time elapsed: 0 sec  <<< ERROR!
+testPseudoHas(org.jsoup.select.SelectorTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.SelectorTest.testPseudoHas(SelectorTest.java:485)
 
-notClass(org.jsoup.select.SelectorTest)  Time elapsed: 0 sec  <<< ERROR!
+notClass(org.jsoup.select.SelectorTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.select.SelectorTest.notClass(SelectorTest.java:657)
 

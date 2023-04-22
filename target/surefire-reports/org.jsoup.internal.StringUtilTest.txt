@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.internal.StringUtilTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 2, Errors: 5, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in org.jsoup.internal.StringUtilTest
+Tests run: 9, Failures: 2, Errors: 5, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.internal.StringUtilTest
 isWhitespace(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.jsoup.internal.StringUtilTest.isWhitespace(StringUtilTest.java:66)
 
-join(org.jsoup.internal.StringUtilTest)  Time elapsed: 0.001 sec  <<< ERROR!
+join(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.internal.StringUtilTest.join(StringUtilTest.java:19)
 
-normaliseWhiteSpaceHandlesHighSurrogates(org.jsoup.internal.StringUtilTest)  Time elapsed: 0.001 sec  <<< ERROR!
+normaliseWhiteSpaceHandlesHighSurrogates(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.internal.StringUtilTest.normaliseWhiteSpaceHandlesHighSurrogates(StringUtilTest.java:82)
 
@@ -18,7 +18,7 @@ isNumeric(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
 	at org.jsoup.internal.StringUtilTest.isNumeric(StringUtilTest.java:49)
 
-resolvesRelativeUrls(org.jsoup.internal.StringUtilTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+resolvesRelativeUrls(org.jsoup.internal.StringUtilTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<http://example.com/[]one/two?three> but was:<http://example.com/[./]one/two?three>
 	at org.jsoup.internal.StringUtilTest.resolvesRelativeUrls(StringUtilTest.java:88)
 
@@ -26,7 +26,7 @@ normaliseWhiteSpace(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<<
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.internal.StringUtilTest.normaliseWhiteSpace(StringUtilTest.java:72)
 
-isBlank(org.jsoup.internal.StringUtilTest)  Time elapsed: 0 sec  <<< ERROR!
+isBlank(org.jsoup.internal.StringUtilTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
 	at org.jsoup.internal.StringUtilTest.isBlank(StringUtilTest.java:39)
 

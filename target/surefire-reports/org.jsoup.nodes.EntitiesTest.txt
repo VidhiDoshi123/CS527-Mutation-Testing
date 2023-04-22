@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.EntitiesTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 15, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.nodes.EntitiesTest
+Tests run: 15, Failures: 0, Errors: 15, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.nodes.EntitiesTest
 strictUnescape(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at org.jsoup.nodes.EntitiesTest.strictUnescape(EntitiesTest.java:102)
@@ -42,7 +42,7 @@ java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.nodes.Entit
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
 	at org.jsoup.nodes.EntitiesTest.strictUnescape(EntitiesTest.java:102)
 
-notMissingMultis(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0 sec  <<< ERROR!
+notMissingMultis(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.nodes.Entities
 	at org.jsoup.nodes.EntitiesTest.notMissingMultis(EntitiesTest.java:84)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
@@ -82,7 +82,7 @@ letterDigitEntities(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0 sec  <<< ERRO
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.nodes.EntitiesTest.letterDigitEntities(EntitiesTest.java:126)
 
-unescapeMultiChars(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0.001 sec  <<< ERROR!
+unescapeMultiChars(org.jsoup.nodes.EntitiesTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.nodes.Entities
 	at org.jsoup.nodes.EntitiesTest.unescapeMultiChars(EntitiesTest.java:47)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]

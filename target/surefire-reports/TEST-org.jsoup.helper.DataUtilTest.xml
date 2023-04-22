@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.DataUtilTest" time="0.009" tests="15" errors="9" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jsoup.helper.DataUtilTest" time="0.011" tests="15" errors="9" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -33,7 +33,6 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="13.1"/>
     <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.7/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/aparna"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -57,8 +56,6 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="firstMetaElementWithCharsetShouldBeUsedForDecoding" classname="org.jsoup.helper.DataUtilTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
@@ -66,13 +63,13 @@
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="secondMetaElementWithContentTypeContainsCharsetParameter" classname="org.jsoup.helper.DataUtilTest" time="0.008">
+  <testcase name="secondMetaElementWithContentTypeContainsCharsetParameter" classname="org.jsoup.helper.DataUtilTest" time="0.009">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.secondMetaElementWithContentTypeContainsCharsetParameter(DataUtilTest.java:120)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="supportsUTF8BOM" classname="org.jsoup.helper.DataUtilTest" time="0">
+  <testcase name="supportsUTF8BOM" classname="org.jsoup.helper.DataUtilTest" time="0.001">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.supportsUTF8BOM(DataUtilTest.java:164)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -106,7 +103,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 	at org.jsoup.helper.DataUtilTest.testCharset(DataUtilTest.java:24)
 ]]></failure>
   </testcase>
-  <testcase name="supportsBOMinFiles" classname="org.jsoup.helper.DataUtilTest" time="0.001">
+  <testcase name="supportsBOMinFiles" classname="org.jsoup.helper.DataUtilTest" time="0">
     <error message="Could not initialize class org.jsoup.parser.Tag" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.helper.DataUtilTest.supportsBOMinFiles(DataUtilTest.java:141)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
@@ -123,7 +120,7 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArg
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 </error>
   </testcase>
-  <testcase name="shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags" classname="org.jsoup.helper.DataUtilTest" time="0">
+  <testcase name="shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags" classname="org.jsoup.helper.DataUtilTest" time="0.001">
     <failure message="expected:&lt;ISO-8859-1&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<ISO-8859-1> but was:<null>
 	at org.jsoup.helper.DataUtilTest.shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags(DataUtilTest.java:74)
 ]]></failure>

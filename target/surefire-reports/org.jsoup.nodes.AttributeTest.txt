@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.nodes.AttributeTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.jsoup.nodes.AttributeTest
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.nodes.AttributeTest
 settersOnOrphanAttribute(org.jsoup.nodes.AttributeTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: Object must not be null
 	at org.jsoup.nodes.AttributeTest.settersOnOrphanAttribute(AttributeTest.java:42)

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.parser.TagTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.jsoup.parser.TagTest
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.jsoup.parser.TagTest
 divSemantics(org.jsoup.parser.TagTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.divSemantics(TagTest.java:42)
@@ -22,7 +22,7 @@ java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentExc
 	at org.jsoup.parser.TagTest.valueOfChecksNotEmpty(TagTest.java:76)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]
 
-pSemantics(org.jsoup.parser.TagTest)  Time elapsed: 0.001 sec  <<< ERROR!
+pSemantics(org.jsoup.parser.TagTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class org.jsoup.parser.Tag
 	at org.jsoup.parser.TagTest.pSemantics(TagTest.java:49)
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Object must not be null [in thread "main"]

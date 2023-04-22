@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: org.jsoup.parser.TokeniserStateTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in org.jsoup.parser.TokeniserStateTest
+Tests run: 12, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE! - in org.jsoup.parser.TokeniserStateTest
 testEndTagOpen(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testEndTagOpen(TokeniserStateTest.java:63)
 
-testPublicIdentifiersWithWhitespace(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0 sec  <<< ERROR!
+testPublicIdentifiersWithWhitespace(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testPublicIdentifiersWithWhitespace(TokeniserStateTest.java:155)
 
@@ -22,15 +22,15 @@ testCharacterReferenceInRcdata(org.jsoup.parser.TokeniserStateTest)  Time elapse
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testCharacterReferenceInRcdata(TokeniserStateTest.java:41)
 
-testRcdataLessthanSign(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0 sec  <<< ERROR!
+testRcdataLessthanSign(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testRcdataLessthanSign(TokeniserStateTest.java:90)
 
-testCommentEndCoverage(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testCommentEndCoverage(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testCommentEndCoverage(TokeniserStateTest.java:118)
 
-testBeforeTagName(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0 sec  <<< ERROR!
+testBeforeTagName(org.jsoup.parser.TokeniserStateTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: String input must not be null
 	at org.jsoup.parser.TokeniserStateTest.testBeforeTagName(TokeniserStateTest.java:50)
 
