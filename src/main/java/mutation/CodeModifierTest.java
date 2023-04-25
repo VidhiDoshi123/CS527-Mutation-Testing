@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.util.concurrent.*;
 
 
 public class CodeModifierTest
@@ -20,15 +21,18 @@ public class CodeModifierTest
 
 	public static void main(String args[]) throws IOException {
 		List<MutantGeneratorClass> mutations = new ArrayList<>();
-		mutations.add(new EqualsMutant());
-		mutations.add(new MultiplyMutant());
+		mutations.add(new negateConditionals());
+		mutations.add(new mathMutator());
+		mutations.add(new returnValuesMutator());
+		mutations.add(new RemoveConditionalsMutator());
+		mutations.add(new conditionalsBoundary());
 		for (MutantGeneratorClass mutant : mutations) {
 			String nameOfClass = mutant.getClass().getSimpleName();
 			testJsoup(mutant,nameOfClass);
 		}
 		System.out.println("done mutating");
 	}
-	public static void testJsoup(MutantGeneratorClass mutant, String nameOfClass) throws IOException {
+	public static void testJsoup(final MutantGeneratorClass mutant, String nameOfClass) throws IOException {
 
 		//pre run
 		try{
@@ -85,6 +89,11 @@ public class CodeModifierTest
 //				mutcom.mutatedJavaCompile(cu, OUTPUT_DIRECTORY);
 //			}
 
+
+
+
+			//changes start here
+			//following code is working
 			for (CompilationUnit cu2 : parsedFile) {
 				CompilationUnit obj1 = mutant.createMutant(cu2);
 //					CompilationUnit obj2 = cmd1.createMutMultiply(cu2);
@@ -99,6 +108,7 @@ public class CodeModifierTest
 			try {
 				System.out.println("pre run complete");
 				runMavenSureFireTest();
+				System.out.println("maven run complete");
 				createReports(nameOfClass);
 			} catch (InterruptedException e) {
 				throw new RuntimeException(e);
@@ -155,7 +165,7 @@ public class CodeModifierTest
 	}
 
 	public static void runMavenSureFireTest() throws IOException, InterruptedException {
-
+		System.out.println("inside the maven surefire test function");
 //		ProcessBuilder pb = new ProcessBuilder("cmd.exe","/c","cd D:\\UIUC 527\\mutation-testing\\jsoup && mvn surefire:test | mvn surefire-report:report -Dsurefire.report.title=report");
 		ProcessBuilder pb = new ProcessBuilder("sh", "-c", " mvn surefire:test");
 		pb.redirectErrorStream(true);
@@ -163,8 +173,14 @@ public class CodeModifierTest
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 		String line;
+		long startTime = System.currentTimeMillis();
 		while ((line = reader.readLine()) != null) {
 			System.out.println(line);
+			if ((System.currentTimeMillis() - startTime) > 20000) {
+				process.destroy();
+				System.out.println("Timeout reached. Skipping to next file.");
+				break;
+			}
 		}
 		process.waitFor();
 	}

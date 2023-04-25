@@ -6,7 +6,7 @@ import com.github.javaparser.ast.visitor.ModifierVisitor;
 import com.github.javaparser.ast.visitor.Visitable;
 
 
-public class EqualsMutant implements MutantGeneratorClass{
+public class negateConditionals implements MutantGeneratorClass{
     public CompilationUnit createMutant(CompilationUnit cu){
         ModifierVisitor<Void> visitor = new ModifierVisitor<Void>(){
 

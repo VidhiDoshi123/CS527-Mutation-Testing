@@ -20,8 +20,8 @@
 
 				<configuration>
 <!--					<outputDirectory>target/classes-mutated</outputDirectory>-->
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>9</source>
+					<target>9</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
