@@ -29,7 +29,7 @@ public class CodeModifier {
         };
 
         visitor.visit(cu,null);
-//        System.out.println("#mutations "+totalMutations);
+        System.out.println("#mutations made by me"+totalMutations);
         return cu;
     }
 
