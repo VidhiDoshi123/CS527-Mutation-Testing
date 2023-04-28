@@ -62,7 +62,6 @@ public class negateConditionals implements MutantCreator {
             }
         };
         visitor.visit(cu,null);
-        writer.write("maxi value is: "+maxi[0]+"\n");
         return new Object[] {cu, maxi[0]};
     }
 }
