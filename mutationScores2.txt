@@ -1,0 +1,215 @@
+--------------------START---------------------------
+Operator Name is : negateConditionals
+--------------------START---------------------------
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Attributes.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Element.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Node.java
+mutants Killed are : 2
+file Name is : BooleanAttribute.java
+mutants Killed are : 0
+total executed mutants so far: 1
+file Name is : LeafNode.java
+mutants Killed are : 1
+file Name is : CDataNode.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Document.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Entities.java
+mutants Killed are : 2
+file Name is : EntitiesData.java
+mutants Killed are : 0
+file Name is : DataNode.java
+mutants Killed are : 0
+file Name is : Comment.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : NodeUtils.java
+mutants Killed are : 2
+file Name is : XmlDeclaration.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : FormElement.java
+mutants Killed are : 1
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : DocumentType.java
+mutants Killed are : 1
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Attribute.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : TextNode.java
+mutants Killed are : 2
+file Name is : PseudoTextElement.java
+mutants Killed are : 0
+file Name is : package-info.java
+mutants Killed are : 0
+file Name is : UncheckedIOException.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : StringUtil.java
+mutants Killed are : 2
+total executed mutants so far: 1
+file Name is : Normalizer.java
+mutants Killed are : 1
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : ConstrainableInputStream.java
+mutants Killed are : 2
+file Name is : package-info.java
+mutants Killed are : 0
+file Name is : Jsoup.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : HtmlTreeBuilderState.java
+mutants Killed are : 2
+file Name is : Parser.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Tag.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Tokeniser.java
+mutants Killed are : 2
+file Name is : ParseError.java
+mutants Killed are : 0
+file Name is : ParseErrorList.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : TreeBuilder.java
+mutants Killed are : 1
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Token.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : CharacterReader.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : HtmlTreeBuilder.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : TokenQueue.java
+mutants Killed are : 2
+file Name is : ParseSettings.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : XmlTreeBuilder.java
+mutants Killed are : 2
+file Name is : package-info.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : TokeniserState.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Cleaner.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Whitelist.java
+mutants Killed are : 2
+file Name is : package-info.java
+mutants Killed are : 0
+file Name is : SerializationException.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : HtmlToPlainText.java
+mutants Killed are : 0
+file Name is : Wikipedia.java
+mutants Killed are : 0
+total executed mutants so far: 1
+file Name is : ListLinks.java
+mutants Killed are : 0
+file Name is : package-info.java
+mutants Killed are : 0
+file Name is : Connection.java
+mutants Killed are : 0
+file Name is : UnsupportedMimeTypeException.java
+mutants Killed are : 0
+file Name is : HttpStatusException.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : NodeTraversor.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : StructuralEvaluator.java
+mutants Killed are : 2
+file Name is : Collector.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Elements.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : QueryParser.java
+mutants Killed are : 2
+file Name is : CombiningEvaluator.java
+mutants Killed are : 0
+file Name is : Selector.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Evaluator.java
+mutants Killed are : 2
+file Name is : NodeFilter.java
+mutants Killed are : 0
+file Name is : package-info.java
+mutants Killed are : 0
+file Name is : NodeVisitor.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : DataUtil.java
+mutants Killed are : 1
+file Name is : ChangeNotifyingArrayList.java
+mutants Killed are : 0
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : Validate.java
+mutants Killed are : 2
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : HttpConnection.java
+mutants Killed are : 1
+total executed mutants so far: 1
+total executed mutants so far: 2
+file Name is : W3CDom.java
+mutants Killed are : 2
+file Name is : package-info.java
+mutants Killed are : 0
+--------------------END---------------------------
+Net killed for negateConditionals are: 63
+Net executed for negateConditionals are: 1496
+mutation score negateConditionals is: 0
+--------------------END---------------------------

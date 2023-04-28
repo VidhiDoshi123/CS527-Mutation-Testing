@@ -3,8 +3,8 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.BooleanLiteralExpr;
 import com.github.javaparser.ast.visitor.ModifierVisitor;
 import com.github.javaparser.ast.visitor.Visitable;
-public class returnValuesMutator implements MutantGeneratorClass {
-    public CompilationUnit createMutant(CompilationUnit cu){
+public class returnValuesMutator implements MutantCreator {
+    public Object[] createMutant(CompilationUnit cu, int i){
         ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
             @Override
             public Visitable visit(BooleanLiteralExpr n, Void arg) {
@@ -17,6 +17,6 @@ public class returnValuesMutator implements MutantGeneratorClass {
         };
 
         visitor.visit(cu, null);
-        return cu;
+        return new CompilationUnit[]{cu};
     }
 }

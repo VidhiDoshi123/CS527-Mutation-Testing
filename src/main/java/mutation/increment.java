@@ -1,15 +1,14 @@
 package mutation;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.UnaryExpr;
 import com.github.javaparser.ast.visitor.ModifierVisitor;
 import com.github.javaparser.ast.visitor.Visitable;
 
 //this code does not work
-public class increment implements MutantGeneratorClass {
+public class increment implements MutantCreator {
 
-    public CompilationUnit createMutant(CompilationUnit cu) {
+    public Object[] createMutant(CompilationUnit cu, int i) {
         ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
             @Override
             public Visitable visit(UnaryExpr n, Void arg) {
@@ -29,6 +28,7 @@ public class increment implements MutantGeneratorClass {
             }
         };
 
-        return (CompilationUnit) visitor.visit(cu, null);
+        visitor.visit(cu,null);
+        return new CompilationUnit[]{cu};
     }
 }

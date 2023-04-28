@@ -2,6 +2,7 @@ package mutation;
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.*;
 
 import java.io.File;
@@ -11,132 +12,159 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.util.concurrent.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import static java.lang.Math.max;
 
 
 public class CodeModifierTest
 {
 	private static final String OUTPUT_DIRECTORY = "target/classes" ;
-	private static final String OUTPUT_DIRECTORY2 = "target/classes/greater" ;
+	static FileWriter writer;
+	static int totalMutantsKilled = 0;
+	static int totalMutantsExecuted = 0;
 
-	public static void main(String args[]) throws IOException {
-		List<MutantGeneratorClass> mutations = new ArrayList<>();
-		mutations.add(new negateConditionals());
-		mutations.add(new mathMutator());
-		mutations.add(new returnValuesMutator());
-		mutations.add(new RemoveConditionalsMutator());
-		mutations.add(new conditionalsBoundary());
-		for (MutantGeneratorClass mutant : mutations) {
-			String nameOfClass = mutant.getClass().getSimpleName();
-			testJsoup(mutant,nameOfClass);
-		}
-		System.out.println("done mutating");
-	}
-	public static void testJsoup(final MutantGeneratorClass mutant, String nameOfClass) throws IOException {
-
-		//pre run
-		try{
-			runMavenClean();
-			runMavenTest();
-		} catch (InterruptedException e) {
+	static {
+		try {
+			writer = new FileWriter("mutationScores.txt", false);
+		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
+	}
 
-		//mutation started
-		String path = "src/main/java/org/jsoup";
+	public CodeModifierTest() throws IOException {
+	}
+
+	public static void main(String args[]) throws IOException {
+		//iterate over the list of mutations a.k.a operators
+		// for each operator do steps inside the testJsoup function
+		List<MutantCreator> mutations = new ArrayList<>();
+		mutations.add(new negateConditionals());
+//		mutations.add(new mathMutator());
+//		mutations.add(new returnValuesMutator());
+//		mutations.add(new RemoveConditionalsMutator());
+//		mutations.add(new conditionalsBoundary());
+		for (MutantCreator mutant : mutations) {
+			totalMutantsKilled = 0;
+			totalMutantsExecuted = 0;
+			String nameOfClass = mutant.getClass().getSimpleName();
+			writer.write("--------------------START---------------------------"+ "\n");
+			writer.write("Operator Name is : " +nameOfClass+ "\n");
+			writer.write("--------------------START---------------------------"+ "\n");
+			testJsoup(mutant, nameOfClass);
+		}
+		System.out.println("done mutating");
+		writer.close();
+	}
+
+	public static List<File> getSubFolderJavaFiles(String path) {
 		File mainFolder = new File(path);
 		List<File> subFolderJavaFiles = new ArrayList<>();
 
-		//1) checking if mainFolder exists then traversing the subfolder to extract javaFiles
-		if (mainFolder.exists() && mainFolder.isDirectory())
+		// checking if mainFolder exists then traversing the subfolder to extract javaFiles
+		if (mainFolder.exists() && mainFolder.isDirectory()) {
 			for (File subFile : mainFolder.listFiles()) {
-				if (subFile.isDirectory())
-					for (File file : subFile.listFiles())
-						if (file.isFile())
-							if (file.getName().endsWith(".java"))
+				if (subFile.isDirectory()) {
+					for (File file : subFile.listFiles()) {
+						if (file.isFile()) {
+							if (file.getName().endsWith(".java")) {
 								subFolderJavaFiles.add(file);
-
-							else if (subFile.isFile())
-								if (subFile.getName().endsWith(".java"))
-									subFolderJavaFiles.add(subFile);
+							}
+						}
+					}
+				} else if (subFile.isFile()) {
+					if (subFile.getName().endsWith(".java")) {
+						subFolderJavaFiles.add(subFile);
+					}
+				}
 			}
+		}
+		return subFolderJavaFiles;
+	}
 
+	public static void testJsoup(final MutantCreator mutant, String nameOfClass) throws IOException {
+		//add java files to a list
+		String path = "src/main/java/org/jsoup";
+		List<File> subFolderJavaFiles = getSubFolderJavaFiles(path);
 
-		//2) parsing the collected java files
-		List<CompilationUnit> parsedFile = new ArrayList<>();
+		//compiling the mutants generated and adding it to target/classes
+		System.out.println("done with extracting java files");
+		System.out.println("starting the process of parsing,mutating,compiling,running");
+
+		mutatedFilesCompiler mutcom = new mutatedFilesCompiler();
+		// Store the updated killed count for the class name
+		/*
+		1) iterate over the java files
+		2) decide how many mutators to create in each
+		3) run maven clean and test
+		4) compile the file
+		5) mutate every operator and then run the file for each mutation
+		6) run it and check the exit code
+		7) if it is not zero then it means mutant has been killed
+		8) record the number of mutants killed for each file
+		9) sum it to get the number of mutants killed for each operator
+		7) create reports
+		*/
+
 		for (File file : subFolderJavaFiles) {
-			try{
+			String fileName = file.getName();
+			int killedCount = 0;
+			int executeCount = 0;
+			//x represents the total mutators to be created in a single file
+			for(int x = 0;x<2;x++){
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
-				parsedFile.add(cu1);
+				//pre run
+				try{
+					runMavenClean();
+					runMavenTest();
+				} catch (InterruptedException e) {
+					throw new RuntimeException(e);
+				}
+
+//				CompilationUnit obj1 = mutant.createMutant(cu1, x);
+				Object[] result = mutant.createMutant(cu1, x);
+				CompilationUnit obj1 = (CompilationUnit) result[0];
+				int maxi = (int) result[1];
+				executeCount = maxi;
+				mutcom.mutatedJavaCompile(obj1, OUTPUT_DIRECTORY);
+				try {
+					System.out.println("pre run complete");
+					int exitValue = runMavenSureFireTest();
+					if (exitValue!=0) {
+						killedCount +=1;
+					}
+					System.out.println("maven run complete");
+
+					String reportName = nameOfClass + "_" + fileName + "_" + x;
+					createReports(reportName);
+					System.out.println("report generated for : "+reportName);
+//					copyHtmlFile(reportName);
+//					System.out.println("copied reports generated for: "+ reportName);
+				} catch (InterruptedException e) {
+					throw new RuntimeException(e);
+				}
 			}
-			catch(Exception e){
-//				System.out.println(e);
-			}
+
+			totalMutantsKilled += killedCount;
+			totalMutantsExecuted +=executeCount;
+
+			writer.write("file Name is : " +fileName+ "\n");
+			writer.write("mutants Killed are : " +killedCount+ "\n");
+			writer.write("mutants executed are : " +executeCount+ "\n");
+			writer.write("------ "+"\n");
 		}
 
-		//3) compiling the mutants generated and adding it to target/classes
-//		CodeModifier cmd1 = new CodeModifier();
-		for(int i = 0; i<1; i++) {
-			List<CompilationUnit> mutatedFile = new ArrayList<>();
-//			for (CompilationUnit cu2 : parsedFile) {
-//				CompilationUnit obj1 = cmd1.createMutEquals(cu2);
-////					CompilationUnit obj2 = cmd1.createMutMultiply(cu2);
-//				mutatedFile.add(obj1);
-////					mutatedFile.add(obj2);
-//			}
-//			mutatedFilesCompiler mutcom = new mutatedFilesCompiler();
-//			for (CompilationUnit cu : mutatedFile) {
-//				mutcom.mutatedJavaCompile(cu, OUTPUT_DIRECTORY);
-//			}
-
-
-
-
-			//changes start here
-			//following code is working
-			for (CompilationUnit cu2 : parsedFile) {
-				CompilationUnit obj1 = mutant.createMutant(cu2);
-//					CompilationUnit obj2 = cmd1.createMutMultiply(cu2);
-				mutatedFile.add(obj1);
-//					mutatedFile.add(obj2);
-			}
-			mutatedFilesCompiler mutcom = new mutatedFilesCompiler();
-			for (CompilationUnit cu : mutatedFile) {
-				mutcom.mutatedJavaCompile(cu, OUTPUT_DIRECTORY);
-			}
-
-			try {
-				System.out.println("pre run complete");
-				runMavenSureFireTest();
-				System.out.println("maven run complete");
-				createReports(nameOfClass);
-			} catch (InterruptedException e) {
-				throw new RuntimeException(e);
-			}
-			System.out.println("report generated.");
-			copyHtmlFile(nameOfClass);
-			System.out.println("copied reports generated.");
-		}
-
-//		 for(int i = 0; i<7; i++) {
-//		 	List<CompilationUnit> mutatedFile = new ArrayList<>();
-//			 mutatedFilesCompiler mutcom = new mutatedFilesCompiler();
-//		 	for (CompilationUnit cu2 : parsedFile) {
-//		 		CompilationUnit obj1 = cmd1.createMutEquals(cu2);
-//		 		mutcom.mutatedJavaCompile(obj1, OUTPUT_DIRECTORY1);
-//		 	}
-//			 List<CompilationUnit> slicedParsedFile = parsedFile.subList(0, 3);
-//
-//			 for (CompilationUnit cu2 : parsedFile) {
-//				 CompilationUnit obj2 = cmd1.createMutPlus(cu2);
-//				 mutcom.mutatedJavaCompile(obj2, OUTPUT_DIRECTORY2);
-//			 }
-//		 }
+		//done with all java files for an operator
+		writer.write("--------------------END---------------------------"+ "\n");
+		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");
+		writer.write("Net executed for " + nameOfClass + " are: " + totalMutantsExecuted +"\n");
+		writer.write("mutation score " + nameOfClass + " is: " + totalMutantsKilled/totalMutantsExecuted +"\n");
+		writer.write("--------------------END---------------------------"+ "\n");
 	}
 
 	public static void runMavenClean() throws IOException, InterruptedException {
-
-//		ProcessBuilder pb = new ProcessBuilder("cmd.exe","/c","cd D:\\UIUC 527\\mutation-testing\\jsoup && mvn surefire:test | mvn surefire-report:report -Dsurefire.report.title=report");
 		ProcessBuilder pb = new ProcessBuilder("sh", "-c", " mvn clean");
 		pb.redirectErrorStream(true);
 		Process process = pb.start();
@@ -150,8 +178,6 @@ public class CodeModifierTest
 	}
 
 	public static void runMavenTest() throws IOException, InterruptedException {
-
-//		ProcessBuilder pb = new ProcessBuilder("cmd.exe","/c","cd D:\\UIUC 527\\mutation-testing\\jsoup && mvn surefire:test | mvn surefire-report:report -Dsurefire.report.title=report");
 		ProcessBuilder pb = new ProcessBuilder("sh", "-c", " mvn test");
 		pb.redirectErrorStream(true);
 		Process process = pb.start();
@@ -164,25 +190,30 @@ public class CodeModifierTest
 		process.waitFor();
 	}
 
-	public static void runMavenSureFireTest() throws IOException, InterruptedException {
+	public static int runMavenSureFireTest() throws IOException, InterruptedException {
 		System.out.println("inside the maven surefire test function");
-//		ProcessBuilder pb = new ProcessBuilder("cmd.exe","/c","cd D:\\UIUC 527\\mutation-testing\\jsoup && mvn surefire:test | mvn surefire-report:report -Dsurefire.report.title=report");
 		ProcessBuilder pb = new ProcessBuilder("sh", "-c", " mvn surefire:test");
 		pb.redirectErrorStream(true);
 		Process process = pb.start();
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 		String line;
-		long startTime = System.currentTimeMillis();
+
+		//setting the timeout to make sure the code does not hang
+		ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
+		long timeout = 20; // timeout in seconds
+		executor.schedule(() -> {
+			process.destroy();
+			System.out.println("Timeout reached. Skipping to next file.");
+		}, timeout, TimeUnit.SECONDS);
+
 		while ((line = reader.readLine()) != null) {
 			System.out.println(line);
-			if ((System.currentTimeMillis() - startTime) > 20000) {
-				process.destroy();
-				System.out.println("Timeout reached. Skipping to next file.");
-				break;
-			}
 		}
+
 		process.waitFor();
+		executor.shutdownNow();
+		return process.exitValue();
 	}
 
 	public static void createReports(String nameOfClass) {
@@ -222,34 +253,33 @@ public class CodeModifierTest
 		return stringBuilder.toString();
 	}
 
-		public static void copyHtmlFile(String nameOfClass) {
-			String sourceFilePath = "target/site/" + nameOfClass + ".html";
-			String destinationDirPath = "htmlMutatedReports/";
+	public static void copyHtmlFile(String nameOfClass) {
+		String sourceFilePath = "target/site/" + nameOfClass + ".html";
+		String destinationDirPath = "htmlMutatedReports/";
 
-			// Create file object
-			File sourceFile = new File(sourceFilePath);
-			File destinationDir = new File(destinationDirPath);
+		// Create file object
+		File sourceFile = new File(sourceFilePath);
+		File destinationDir = new File(destinationDirPath);
 
-			// Check if the source file exists
-			if (sourceFile.exists()) {
-//				sourceFile.renameTo(new File("target/site/" + nameOfClass + ".html"));
-				// Check if the destination directory exists
-				if (!destinationDir.exists()) {
-					// Create the destination directory if it doesn't exist
-					destinationDir.mkdirs();
-				}
-
-				try {
-					// Use the Files.copy() method to copy the file
-					Path sourcePath = sourceFile.toPath();
-					Path destinationPath = new File(destinationDir, sourceFile.getName()).toPath();
-					Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
-					System.out.println("File copied successfully.");
-				} catch (IOException e) {
-					System.err.println("Error copying file: " + e.getMessage());
-				}
-			} else {
-				System.err.println("Source file does not exist.");
+		// Check if the source file exists
+		if (sourceFile.exists()) {
+			// Check if the destination directory exists
+			if (!destinationDir.exists()) {
+				// Create the destination directory if it doesn't exist
+				destinationDir.mkdirs();
 			}
+
+			try {
+				// Use the Files.copy() method to copy the file
+				Path sourcePath = sourceFile.toPath();
+				Path destinationPath = new File(destinationDir, sourceFile.getName()).toPath();
+				Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
+				System.out.println("File copied successfully.");
+			} catch (IOException e) {
+				System.err.println("Error copying file: " + e.getMessage());
+			}
+		} else {
+			System.err.println("Source file does not exist.");
 		}
+	}
 }
