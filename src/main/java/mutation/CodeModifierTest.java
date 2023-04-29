@@ -13,6 +13,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 
+
 public class CodeModifierTest
 {
 	private static final String OUTPUT_DIRECTORY = "target/classes" ;
@@ -33,13 +34,18 @@ public class CodeModifierTest
 
 	public static void main(String args[]) throws IOException {
 		//iterate over the list of mutations a.k.a operators
-		// for each operator do steps inside the testJsoup function
+		//for each operator do steps inside the testJsoup function
 		List<MutantCreator> mutations = new ArrayList<>();
-		mutations.add(new negateConditionals());
-//		mutations.add(new mathMutator());
-//		mutations.add(new returnValuesMutator());
-//		mutations.add(new RemoveConditionalsMutator());
+//		mutations.add(new negateConditionals());
 //		mutations.add(new conditionalsBoundary());
+//		mutations.add(new mathMutator());
+//		mutations.add(new RemoveConditionalsMutator());
+
+		//exploring the below three
+//		mutations.add(new EmptyReturnsMutator());
+//		mutations.add(new returnValuesMutator());
+//		mutations.add(new increment());
+		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
 			totalMutantsExecuted = 0;
@@ -49,7 +55,6 @@ public class CodeModifierTest
 			writer.write("--------------------START---------------------------"+ "\n");
 			testJsoup(mutant, nameOfClass);
 		}
-
 		System.out.println("done mutating!");
 		writer.close();
 	}
@@ -103,6 +108,8 @@ public class CodeModifierTest
 		7) create reports
 		*/
 
+		System.out.println("length of subFolderJavaFiles : "+(subFolderJavaFiles).size());
+//		File file1 = subFolderJavaFiles.get(1);
 		for (File file : subFolderJavaFiles) {
 			String fileName = file.getName();
 			int killedCount = 0;
@@ -135,9 +142,9 @@ public class CodeModifierTest
 					}
 					System.out.println("maven run complete");
 
-					String reportName = nameOfClass + "_" + fileName + "_" + x;
-					createReports(reportName);
-					System.out.println("report generated for : "+reportName);
+//					String reportName = nameOfClass + "_" + fileName + "_" + x;
+//					createReports(reportName);
+//					System.out.println("report generated for : "+reportName);
 //					copyHtmlFile(reportName);
 //					System.out.println("copied reports generated for: "+ reportName);
 				} catch (InterruptedException e) {
@@ -152,8 +159,8 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
+			break;
 		}
-
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");
 		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");

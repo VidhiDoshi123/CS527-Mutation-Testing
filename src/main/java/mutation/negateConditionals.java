@@ -43,17 +43,16 @@ public class negateConditionals implements MutantCreator {
                         n.setOperator(BinaryExpr.Operator.EQUALS);
                         System.out.println("From not equals count is : "+ count1[0] + " index is: "+index);
                         count1[0] +=1;
+                        fileMutationCount[0] = true;
                         try {
                             writer.write("total executed mutants so far: "+count1[0]+"\n");
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        fileMutationCount[0] = true;
                         return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.EQUALS);
                     } else {
                         count1[0] +=1;
                     }
-
                 }
                 return super.visit(n,args);
             }

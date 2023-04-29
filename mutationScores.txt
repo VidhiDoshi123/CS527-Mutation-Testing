@@ -1,0 +1,16 @@
+--------------------START---------------------------
+Operator Name is : EmptyReturnsMutator
+--------------------START---------------------------
+now value of x is : 0
+mutation made is true
+now value of x is : 1
+mutation made is true
+file Name is : Attributes.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+--------------------END---------------------------
+Net killed for EmptyReturnsMutator are: 0
+Net executed for EmptyReturnsMutator are: 2
+mutation score for EmptyReturnsMutator is: 0.0
+--------------------END---------------------------
