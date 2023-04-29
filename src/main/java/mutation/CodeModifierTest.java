@@ -1,22 +1,16 @@
 package mutation;
+
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import java.io.*;
-import java.nio.file.Paths;
-import java.util.*;
-
-import java.io.File;
-
-
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.Math.max;
 
 
 public class CodeModifierTest
@@ -55,7 +49,8 @@ public class CodeModifierTest
 			writer.write("--------------------START---------------------------"+ "\n");
 			testJsoup(mutant, nameOfClass);
 		}
-		System.out.println("done mutating");
+
+		System.out.println("done mutating!");
 		writer.close();
 	}
 
@@ -114,6 +109,7 @@ public class CodeModifierTest
 			int executeCount = 0;
 			//x represents the total mutators to be created in a single file
 			for(int x = 0;x<2;x++){
+				writer.write("now value of x is : "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
 				try{
@@ -123,11 +119,13 @@ public class CodeModifierTest
 					throw new RuntimeException(e);
 				}
 
-//				CompilationUnit obj1 = mutant.createMutant(cu1, x);
 				Object[] result = mutant.createMutant(cu1, x);
 				CompilationUnit obj1 = (CompilationUnit) result[0];
-				int maxi = (int) result[1];
-				executeCount = maxi;
+				writer.write("mutation made is "+result[1]+"\n");
+				if(result[1].equals(true)) {
+					executeCount +=1;
+				}
+
 				mutcom.mutatedJavaCompile(obj1, OUTPUT_DIRECTORY);
 				try {
 					System.out.println("pre run complete");
@@ -160,7 +158,10 @@ public class CodeModifierTest
 		writer.write("--------------------END---------------------------"+ "\n");
 		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");
 		writer.write("Net executed for " + nameOfClass + " are: " + totalMutantsExecuted +"\n");
-		writer.write("mutation score " + nameOfClass + " is: " + totalMutantsKilled/totalMutantsExecuted +"\n");
+
+		double mutationScore = (double) totalMutantsKilled / totalMutantsExecuted * 100;
+
+		writer.write("mutation score for " + nameOfClass + " is: " + mutationScore +"\n");
 		writer.write("--------------------END---------------------------"+ "\n");
 	}
 
