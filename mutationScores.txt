@@ -1,16 +1,16 @@
 --------------------START---------------------------
-Operator Name is : EmptyReturnsMutator
+Operator Name is : invertNegative
 --------------------START---------------------------
 now value of x is : 0
-mutation made is true
+mutation made is false
 now value of x is : 1
-mutation made is true
+mutation made is false
 file Name is : Attributes.java
 mutants Killed are : 0
-mutants executed are : 2
+mutants executed are : 0
 ------ 
 --------------------END---------------------------
-Net killed for EmptyReturnsMutator are: 0
-Net executed for EmptyReturnsMutator are: 2
-mutation score for EmptyReturnsMutator is: 0.0
+Net killed for invertNegative are: 0
+Net executed for invertNegative are: 0
+mutation score for invertNegative is: NaN
 --------------------END---------------------------

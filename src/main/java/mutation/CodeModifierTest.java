@@ -40,11 +40,13 @@ public class CodeModifierTest
 //		mutations.add(new conditionalsBoundary());
 //		mutations.add(new mathMutator());
 //		mutations.add(new RemoveConditionalsMutator());
+//		mutations.add(new increment());
 
 		//exploring the below three
+//		mutations.add(new invertNegative());
 //		mutations.add(new EmptyReturnsMutator());
 //		mutations.add(new returnValuesMutator());
-//		mutations.add(new increment());
+
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
@@ -105,17 +107,17 @@ public class CodeModifierTest
 		7) if it is not zero then it means mutant has been killed
 		8) record the number of mutants killed for each file
 		9) sum it to get the number of mutants killed for each operator
-		7) create reports
+		10) create reports
 		*/
 
 		System.out.println("length of subFolderJavaFiles : "+(subFolderJavaFiles).size());
-//		File file1 = subFolderJavaFiles.get(1);
+//		File file = subFolderJavaFiles.get(0);
 		for (File file : subFolderJavaFiles) {
 			String fileName = file.getName();
 			int killedCount = 0;
 			int executeCount = 0;
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<2;x++){
+			for(int x = 0;x<1;x++){
 				writer.write("now value of x is : "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
@@ -137,7 +139,7 @@ public class CodeModifierTest
 				try {
 					System.out.println("pre run complete");
 					int exitValue = runMavenSureFireTest();
-					if (exitValue!=0) {
+					if ((result[1].equals(true))&&(exitValue!=0)){
 						killedCount +=1;
 					}
 					System.out.println("maven run complete");
@@ -159,7 +161,6 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
-			break;
 		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");
