@@ -12,8 +12,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-
-
 public class CodeModifierTest
 {
 	private static final String OUTPUT_DIRECTORY = "target/classes" ;
@@ -41,11 +39,12 @@ public class CodeModifierTest
 //		mutations.add(new mathMutator());
 //		mutations.add(new RemoveConditionalsMutator());
 //		mutations.add(new increment());
+//		mutations.add(new returnValuesMutator());
 
 		//exploring the below three
 //		mutations.add(new invertNegative());
 //		mutations.add(new EmptyReturnsMutator());
-//		mutations.add(new returnValuesMutator());
+//		mutations.add(new VoidMethodCallMutator());
 
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
@@ -161,6 +160,7 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
+			break;
 		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");

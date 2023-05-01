@@ -2,6 +2,7 @@
 //
 //import com.github.javaparser.ParseException;
 //import com.github.javaparser.ast.CompilationUnit;
+//import com.github.javaparser.ast.NodeList;
 //import com.github.javaparser.ast.expr.BinaryExpr;
 //import com.github.javaparser.ast.expr.Expression;
 //import com.github.javaparser.ast.stmt.ReturnStmt;
@@ -9,8 +10,11 @@
 //import com.github.javaparser.ast.visitor.Visitable;
 //
 //import java.io.IOException;
+//import java.lang.reflect.Type;
 //import java.util.HashMap;
 //import java.util.Map;
+//import java.util.Optional;
+//
 //import com.github.javaparser.*;
 //import com.github.javaparser.ast.expr.*;
 //import com.github.javaparser.resolution.types.ResolvedType;
@@ -40,23 +44,14 @@
 //        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
 //            @Override
 //            public Visitable visit(ReturnStmt n, Void arg) {
-//                if (count1[0] == index) {
-//                    count1[0] += 1;
-//                    fileMutationCount[0] = true;
-//                    if (n.getExpression() != null) {
-//                        System.out.println("n.getExpression() : "+n.getExpression());
-////                        String exprType = n.getExpression().isPresent().describe();
-////                        String emptyValue = EMPTY_VALUES.get(exprType);
-////                        if (emptyValue != null) {
-////                            Expression emptyExpr = StaticJavaParser.parseExpression(emptyValue);
-////                            return new ReturnStmt(emptyExpr);
-////                        }
-//                    }
+//                    Optional<Expression> expr = n.getExpression();
+//                    expr.ifPresent(expression -> {
+//                        if (expression instanceof NameExpr) {
+//                            NameExpr nameExpr = (NameExpr) expression;
+//                            System.out.println("Variable name: " + nameExpr);
+//                        }
+//                    });
 //                    return new ReturnStmt();
-//                } else {
-//                    count1[0] += 1;
-//                    return super.visit(n, arg);
-//                }
 //            }
 //        };
 //

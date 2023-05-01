@@ -1,0 +1,589 @@
+--------------------START---------------------------
+Operator Name is : returnValuesMutator
+--------------------START---------------------------
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Attributes.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Element.java
+mutants Killed are : 2
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Node.java
+mutants Killed are : 1
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+mutation made is false
+file Name is : BooleanAttribute.java
+mutants Killed are : 0
+mutants executed are : 1
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : LeafNode.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : CDataNode.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Document.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+mutation made is false
+file Name is : Entities.java
+mutants Killed are : 1
+mutants executed are : 1
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : EntitiesData.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : DataNode.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Comment.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : NodeUtils.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : XmlDeclaration.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : FormElement.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : DocumentType.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Attribute.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : TextNode.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : PseudoTextElement.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : UncheckedIOException.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : StringUtil.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Normalizer.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+mutation made is false
+file Name is : ConstrainableInputStream.java
+mutants Killed are : 0
+mutants executed are : 1
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Jsoup.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : HtmlTreeBuilderState.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Parser.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Tag.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+mutation made is false
+file Name is : Tokeniser.java
+mutants Killed are : 0
+mutants executed are : 1
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : ParseError.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : ParseErrorList.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : TreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Token.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : CharacterReader.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : HtmlTreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : TokenQueue.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : ParseSettings.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+mutation made is false
+file Name is : XmlTreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 1
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : TokeniserState.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Cleaner.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Whitelist.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : SerializationException.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : HtmlToPlainText.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Wikipedia.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : ListLinks.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Connection.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : UnsupportedMimeTypeException.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : HttpStatusException.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : NodeTraversor.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : StructuralEvaluator.java
+mutants Killed are : 2
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Collector.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Elements.java
+mutants Killed are : 2
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : QueryParser.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : CombiningEvaluator.java
+mutants Killed are : 2
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Selector.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : Evaluator.java
+mutants Killed are : 2
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : NodeFilter.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : NodeVisitor.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : DataUtil.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : ChangeNotifyingArrayList.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : Validate.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+total executed mutants so far: 1
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+mutation made is true
+file Name is : HttpConnection.java
+mutants Killed are : 0
+mutants executed are : 2
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : W3CDom.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------ 
+--------------------END---------------------------
+Net killed for returnValuesMutator are: 12
+Net executed for returnValuesMutator are: 37
+mutation score for returnValuesMutator is: 32.432432432432435
+--------------------END---------------------------
