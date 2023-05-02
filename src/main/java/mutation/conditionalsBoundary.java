@@ -57,6 +57,36 @@ public class conditionalsBoundary implements MutantCreator {
                     } else {
                         count1[0] +=1;
                     }
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
+                    if (count1[0] == index){
+                        n.setOperator(BinaryExpr.Operator.GREATER);
+                        System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
+                        count1[0] +=1;
+                        fileMutationCount[0] = true;
+                        try {
+                            writer.write("total executed mutants so far: "+count1[0]+"\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER);
+                    } else {
+                        count1[0] +=1;
+                    }
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER){
+                    if (count1[0] == index){
+                        n.setOperator(BinaryExpr.Operator.GREATER_EQUALS);
+                        System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
+                        count1[0] +=1;
+                        fileMutationCount[0] = true;
+                        try {
+                            writer.write("total executed mutants so far: "+count1[0]+"\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER_EQUALS);
+                    } else {
+                        count1[0] +=1;
+                    }
                 }
                 return super.visit(n,args);
             }

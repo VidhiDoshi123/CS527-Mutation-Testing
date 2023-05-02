@@ -3,20 +3,19 @@
 //import com.github.javaparser.ast.CompilationUnit;
 //import com.github.javaparser.ast.NodeList;
 //import com.github.javaparser.ast.body.MethodDeclaration;
-//import com.github.javaparser.ast.expr.NullLiteralExpr;
+//import com.github.javaparser.ast.expr.BooleanLiteralExpr;
+//import com.github.javaparser.ast.expr.SwitchExpr;
 //import com.github.javaparser.ast.stmt.ReturnStmt;
 //import com.github.javaparser.ast.stmt.SwitchEntry;
+//import com.github.javaparser.ast.stmt.SwitchStmt;
+//import com.github.javaparser.ast.type.PrimitiveType;
 //import com.github.javaparser.ast.type.Type;
-//import com.github.javaparser.ast.type.VoidType;
 //import com.github.javaparser.ast.visitor.ModifierVisitor;
 //import com.github.javaparser.ast.visitor.Visitable;
-//import com.github.javaparser.ast.stmt.SwitchStmt;
-//
 //
 //import java.io.IOException;
-//import java.util.HashMap;
+//import java.lang.invoke.SwitchPoint;
 //import java.util.List;
-//import java.util.Map;
 //
 //import static com.github.javaparser.StaticJavaParser.parseStatement;
 //import static mutation.CodeModifierTest.writer;
@@ -30,31 +29,44 @@
 //        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
 //            @Override
 //            public Visitable visit(SwitchStmt n, Void arg) {
-//                    NodeList<SwitchEntry> entries = n.getEntries();
-//                    String defaultLabel = null;
-//                    String nonDefaultLabel = null;
+//                NodeList<SwitchEntry> entries = n.getEntries();
 //
-//                    // Find the first non-default label
-//                    for (SwitchEntry entry : entries) {
-//                        if (entry.getLabels().isEmpty()) {
-//                            System.out.println("before 1");
-//                            defaultLabel = entry.toString();
-//                            System.out.println("problem 1");
-//                            System.out.println("defaultLabel: "+defaultLabel);
-//                        } else {
-//                            nonDefaultLabel = entry.getLabels().get(0).toString();
-//                            System.out.println("nonDefaultLabel: "+nonDefaultLabel);
-//                            break;
-//                        }
+//                String defaultLabel1 = null;
+//                String nonDefaultLabel1 = null;
+//                for (SwitchEntry entry : entries) {
+//                    if (!entry.getLabels().isEmpty())  {
+//                        nonDefaultLabel1 = entry.getLabels().get(0).toString();
+//                        System.out.println("nonDefaultLabel: "+nonDefaultLabel1);
+//                        break;
 //                    }
-//                System.out.println("before 2");
-//                String switchStmtString = n.toString();
-//                System.out.println("problem 2");
-//                String mutatedSwitchStmtString = switchStmtString.replace(defaultLabel, nonDefaultLabel);
-//                return parseStatement(mutatedSwitchStmtString);
+//                }
+//
+//                for (SwitchEntry entry : entries) {
+//                    if (entry.getLabels().isEmpty()) {
+//                        defaultLabel1 = entry.toString();
+//                        System.out.println("defaultLabel: "+defaultLabel1);
+//                        break;
+//                    }
+//                }
+//
+//
+//
+//                fileMutationCount[0] = true;
+//                int lineNumber = n.getBegin().get().line;
+//                try {
+//                    writer.write("total executed mutants so far: "+count1[0]+"\n");
+//                    writer.write("line number : " + lineNumber + "\n");
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
+//
+//                return super.visit(n, arg);
 //            }
 //        };
 //        visitor.visit(cu, null);
 //        return new Object[]{cu, fileMutationCount[0]};
 //    }
 //}
+//
+//
+//
