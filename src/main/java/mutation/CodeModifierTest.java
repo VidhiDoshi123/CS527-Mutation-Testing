@@ -43,7 +43,7 @@ public class CodeModifierTest
 
 		//exploring the below three
 //		mutations.add(new invertNegative());
-//		mutations.add(new EmptyReturnsMutator());
+		mutations.add(new EmptyReturnsMutator());
 //		mutations.add(new VoidMethodCallMutator());
 
 		System.out.println("let's start!");
@@ -110,13 +110,13 @@ public class CodeModifierTest
 		*/
 
 		System.out.println("length of subFolderJavaFiles : "+(subFolderJavaFiles).size());
-		File file = subFolderJavaFiles.get(0);
-//		for (File file : subFolderJavaFiles) {
+//		File file = subFolderJavaFiles.get(0);
+		for (File file : subFolderJavaFiles) {
 			String fileName = file.getName();
 			int killedCount = 0;
 			int executeCount = 0;
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<1;x++){
+			for(int x = 0;x<2;x++){
 				writer.write("now value of x is : "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
@@ -160,7 +160,7 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
-//		}
+		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");
 		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");

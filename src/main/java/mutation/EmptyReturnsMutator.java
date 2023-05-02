@@ -37,12 +37,6 @@ public class EmptyReturnsMutator implements MutantCreator {
         put("Double", String.valueOf(0));
     }};
 
-    /*
-    our objective is
-    1) search for return -> easy
-    2) extract data type of variable associated with return
-    3) use hashMap to return equivalent -> easy
-     */
     public EmptyReturnsMutator() throws IOException {
     }
 
@@ -55,17 +49,30 @@ public class EmptyReturnsMutator implements MutantCreator {
                 Type returnType = n.getType();
                 if(returnType != null &&!(returnType instanceof VoidType)){
                     String dataType = returnType.toString();
-                    int index = dataType.indexOf('<');
-                    if (index != -1) {
-                        dataType = dataType.substring(0, index).trim().toString();
+                    int position = dataType.indexOf('<');
+                    if (position != -1) {
+                        dataType = dataType.substring(0, position).trim().toString();
                     }
                     if (EMPTY_VALUES.containsKey(dataType)) {
                         Object emptyValue = EMPTY_VALUES.get(dataType);
                         System.out.println(" for the dataType: " + dataType +" emptyValue is: "+emptyValue);
                         List<ReturnStmt> returnStmts = n.findAll(ReturnStmt.class);
                         for (ReturnStmt returnStmt : returnStmts) {
-                            fileMutationCount[0] = true;
-                            returnStmt.setExpression(parseExpression(emptyValue.toString()));
+                            if (count1[0] == index){
+                                count1[0] += 1;
+                                fileMutationCount[0] = true;
+                                 int lineNumber = n.getBegin().get().line;
+
+                                try {
+                                    writer.write("total executed mutants so far: "+count1[0]+"\n");
+                                    writer.write("line number : " + lineNumber + "\n");
+                                } catch (IOException e) {
+                                    throw new RuntimeException(e);
+                                }
+                                returnStmt.setExpression(parseExpression(emptyValue.toString()));
+                            }else{
+                                count1[0]+=1;
+                            }
                         }
                     }
                 }
