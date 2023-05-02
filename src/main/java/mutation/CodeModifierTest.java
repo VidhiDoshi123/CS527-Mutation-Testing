@@ -35,7 +35,7 @@ public class CodeModifierTest
 		//for each operator do steps inside the testJsoup function
 		List<MutantCreator> mutations = new ArrayList<>();
 
-		//completed the below 10
+		//completed the below 11
 //		mutations.add(new conditionalsBoundary());
 // 		mutations.add(new EmptyReturnsMutator());
 // 		mutations.add(new increment());
@@ -46,11 +46,14 @@ public class CodeModifierTest
 //		mutations.add(new trueReturns());
 //		mutations.add(new falseReturns());
 //		mutations.add(new primitiveReturns());
+//		mutations.add(new voidCallMutator());
+//		mutations.add(new nullReturns());
+
+
 
 		//exploring the below three
-//		mutations.add(new invertNegative());
-//		mutations.add(new VoidMethodCallMutator());
-//		mutations.add(new nullReturns());
+		mutations.add(new invertNegative());
+//		mutations.add(new experimentalSwitch());
 
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
@@ -122,7 +125,7 @@ public class CodeModifierTest
 			int killedCount = 0;
 			int executeCount = 0;
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<3;x++){
+			for(int x = 0;x<2;x++){
 				writer.write("now value of x is : "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run

@@ -61,7 +61,7 @@ public class EmptyReturnsMutator implements MutantCreator {
                             if (count1[0] == index){
                                 count1[0] += 1;
                                 fileMutationCount[0] = true;
-                                 int lineNumber = n.getBegin().get().line;
+                                int lineNumber = n.getBegin().get().line;
 
                                 try {
                                     writer.write("total executed mutants so far: "+count1[0]+"\n");

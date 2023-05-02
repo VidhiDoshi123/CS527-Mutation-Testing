@@ -1,26 +1,19 @@
 package mutation;
 
-import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.expr.BinaryExpr;
-import com.github.javaparser.ast.expr.Expression;
+import com.github.javaparser.ast.expr.NullLiteralExpr;
 import com.github.javaparser.ast.stmt.ReturnStmt;
-import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.type.VoidType;
 import com.github.javaparser.ast.visitor.ModifierVisitor;
 import com.github.javaparser.ast.visitor.Visitable;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import com.github.javaparser.*;
-import com.github.javaparser.ast.expr.*;
-import com.github.javaparser.resolution.types.ResolvedType;
-
-import static com.github.javaparser.StaticJavaParser.parseExpression;
 import static mutation.CodeModifierTest.writer;
 public class nullReturns implements MutantCreator {
     private static final Map<String, String> EMPTY_VALUES = new HashMap<>() {{
