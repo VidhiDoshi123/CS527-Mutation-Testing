@@ -110,8 +110,8 @@ public class CodeModifierTest
 		*/
 
 		System.out.println("length of subFolderJavaFiles : "+(subFolderJavaFiles).size());
-//		File file = subFolderJavaFiles.get(0);
-		for (File file : subFolderJavaFiles) {
+		File file = subFolderJavaFiles.get(0);
+//		for (File file : subFolderJavaFiles) {
 			String fileName = file.getName();
 			int killedCount = 0;
 			int executeCount = 0;
@@ -160,8 +160,7 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
-			break;
-		}
+//		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");
 		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");

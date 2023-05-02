@@ -1,14 +1,14 @@
 --------------------START---------------------------
-Operator Name is : VoidMethodCallMutator
+Operator Name is : EmptyReturnsMutator
 --------------------START---------------------------
 now value of x is : 0
-mutation made is false
+mutation made is true
 file Name is : Attributes.java
-mutants Killed are : 0
-mutants executed are : 0
+mutants Killed are : 1
+mutants executed are : 1
 ------ 
 --------------------END---------------------------
-Net killed for VoidMethodCallMutator are: 0
-Net executed for VoidMethodCallMutator are: 0
-mutation score for VoidMethodCallMutator is: NaN
+Net killed for EmptyReturnsMutator are: 1
+Net executed for EmptyReturnsMutator are: 1
+mutation score for EmptyReturnsMutator is: 100.0
 --------------------END---------------------------
