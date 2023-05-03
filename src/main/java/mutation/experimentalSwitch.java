@@ -47,6 +47,7 @@ public class experimentalSwitch implements MutantCreator {
                 for (SwitchEntry entry : entries) {
                     if (entry.getLabels().isEmpty()) {
                         defaultLabel1 = entry.getStatements().get(0).toString();
+                        System.out.println("defaultLabel: "+defaultLabel1);
                         break;
                     }
                 }
