@@ -55,15 +55,14 @@ public class CodeModifierTest
 // 		mutations.add(new increment());
 // 		mutations.add(new invertNegative());
 //		mutations.add(new negateConditionals());
+//		mutations.add(new mathMutator());
+//		mutations.add(new returnValuesMutator());
 //		mutations.add(new falseReturns());
 //		mutations.add(new trueReturns());
-//		mutations.add(new RemoveConditionalsMutator());
 //		mutations.add(new primitiveReturns());
-//		mutations.add(new returnValuesMutator());
-
-//		mutations.add(new mathMutator());
-//		mutations.add(new voidCallMutator());
+//		mutations.add(new RemoveConditionalsMutator());
 //		mutations.add(new nullReturns());
+//		mutations.add(new voidCallMutator());
 
 		//exploring the below
 //		mutations.add(new experimentalSwitch());
@@ -80,16 +79,15 @@ public class CodeModifierTest
 			testJsoup(mutant, nameOfClass);
 		}
 		System.out.println("done mutating!");
-		printResults();
+//		printResults();
 		writer.close();
 		writerfinalStats.close();
-
 	}
 
 	public static void printResults() throws IOException {
 		String currentDirectory = System.getProperty("user.dir");
 		File directory = new File(currentDirectory);
-		File[] files = directory.listFiles((dir, name) -> name.endsWith(".txt")); // Select only text files
+		File[] files = directory.listFiles((dir, name) -> name.endsWith(".txt"));
 
 		for (File file : files) {
 			try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -131,7 +129,7 @@ public class CodeModifierTest
 		double mutationCoverage = (double) totalMutantsKilledGLOBAL / totalMutantsGeneratedGLOBAL * 100;
 
 		writerfinalStats.write("MUTATION SCORE/Test strength is " + mutationScoreGLOBAL +"\n");
-		writerfinalStats.write("Mutation coverage is " + mutationScoreGLOBAL +"\n"+"\n"+"\n");
+		writerfinalStats.write("Mutation coverage is " + mutationCoverage +"\n"+"\n"+"\n");
 
 		writerfinalStats.write("****************PI TEST****************" + "\n");
 		writerfinalStats.write("Total killed: " + 2802 + "\n");
@@ -212,7 +210,7 @@ public class CodeModifierTest
 
 			//execute all mutants
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<3;x++){
+			for(int x = 0;x<2;x++){
 				writer.write("Occurrence number being mutated: "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
