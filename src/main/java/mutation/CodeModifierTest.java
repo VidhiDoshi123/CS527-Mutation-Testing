@@ -41,6 +41,7 @@ public class CodeModifierTest
 // 		mutations.add(new increment());
 //		mutations.add(new mathMutator());
 // 		mutations.add(new negateConditionals());
+
 //		mutations.add(new RemoveConditionalsMutator());
 // 		mutations.add(new returnValuesMutator());
 //		mutations.add(new trueReturns());
@@ -54,6 +55,10 @@ public class CodeModifierTest
 
 		//exploring the below
 //		mutations.add(new experimentalSwitch());
+
+		//last 15
+		mutations.add(new inlineConstantMutator());
+//		mutations.add(new constructorMutator());
 
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
@@ -169,6 +174,7 @@ public class CodeModifierTest
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
 			writer.write("------ "+"\n");
+//			break;
 		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");

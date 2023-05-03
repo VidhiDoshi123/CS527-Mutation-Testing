@@ -21,7 +21,7 @@ public class negateConditionals implements MutantCreator {
             @Override
             public Visitable visit(BinaryExpr n, Void args){
                 if(n.getOperator() == BinaryExpr.Operator.EQUALS){
-
+                    int lineNumber = n.getBegin().get().line;
                     if (count1[0] == index){
                         n.setOperator(BinaryExpr.Operator.NOT_EQUALS);
                         System.out.println("From equals count is : "+ count1[0] + " index is: "+index);
@@ -30,6 +30,7 @@ public class negateConditionals implements MutantCreator {
 
                         try {
                             writer.write("total executed mutants so far: "+count1[0]+"\n");
+                            writer.write("line number : " + lineNumber + "\n");
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
