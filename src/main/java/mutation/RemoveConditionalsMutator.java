@@ -35,4 +35,19 @@ public class RemoveConditionalsMutator implements MutantCreator {
         visitor.visit(cu, null);
         return new Object[] {cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(IfStmt n, Void arg) {
+                    mutantGenerated[0] += 1;
+                    n.setCondition(new BooleanLiteralExpr(true));
+                return super.visit(n, arg);
+            }
+        };
+        visitor.visit(cu, null);
+        return new Object[] {cu, mutantGenerated[0]};
+    }
 }

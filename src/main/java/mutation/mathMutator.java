@@ -215,4 +215,75 @@ public class mathMutator implements MutantCreator {
         visitor.visit(cu,null);
         return new Object[] {cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>(){
+
+            @Override
+            public Visitable visit(BinaryExpr n, Void args){
+                if(n.getOperator() == BinaryExpr.Operator.MULTIPLY){
+                        n.setOperator(BinaryExpr.Operator.DIVIDE);
+                        mutantGenerated[0] +=1;
+                        System.out.println("line number is (* -> /) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.DIVIDE);
+                }
+                else if(n.getOperator()==BinaryExpr.Operator.DIVIDE){
+                        n.setOperator(BinaryExpr.Operator.MULTIPLY);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (/ -> *) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.MULTIPLY);
+                }else if(n.getOperator() == BinaryExpr.Operator.PLUS){
+                        n.setOperator(BinaryExpr.Operator.MINUS);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (+ -> -) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.MINUS);
+                }else if(n.getOperator() == BinaryExpr.Operator.MINUS){
+                        n.setOperator(BinaryExpr.Operator.PLUS);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (- -> +) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.PLUS);
+                }else if(n.getOperator() == BinaryExpr.Operator.LEFT_SHIFT){
+                        n.setOperator(BinaryExpr.Operator.SIGNED_RIGHT_SHIFT);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (<< -> >>) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.SIGNED_RIGHT_SHIFT);
+                }else if(n.getOperator() == BinaryExpr.Operator.SIGNED_RIGHT_SHIFT){
+                        n.setOperator(BinaryExpr.Operator.LEFT_SHIFT);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (>> -> <<) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LEFT_SHIFT);
+                }else if(n.getOperator() == BinaryExpr.Operator.UNSIGNED_RIGHT_SHIFT){
+                        n.setOperator(BinaryExpr.Operator.LEFT_SHIFT);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (>>> -> <<) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LEFT_SHIFT);
+                }else if(n.getOperator() == BinaryExpr.Operator.REMAINDER){
+                        n.setOperator(BinaryExpr.Operator.MULTIPLY);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (% -> *) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.MULTIPLY);
+                }else if(n.getOperator() == BinaryExpr.Operator.BINARY_AND){
+                        n.setOperator(BinaryExpr.Operator.BINARY_OR);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (& -> |) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.BINARY_OR);
+                }else if(n.getOperator() == BinaryExpr.Operator.BINARY_OR){
+                        n.setOperator(BinaryExpr.Operator.BINARY_AND);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (| -> &) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.BINARY_AND);
+                }else if(n.getOperator() == BinaryExpr.Operator.XOR){
+                        n.setOperator(BinaryExpr.Operator.BINARY_AND);
+                        mutantGenerated[0] += 1;
+                    System.out.println("line number is (^ -> &) "+n.getBegin().get().line);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.BINARY_AND);
+                }
+                return super.visit(n,args);
+            }
+        };
+        visitor.visit(cu,null);
+        return new Object[] {cu, mutantGenerated[0]};
+    }
 }

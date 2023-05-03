@@ -63,4 +63,40 @@ public class voidCallMutator implements MutantCreator{
         visitor.visit(cu,null);
         return new Object[]{cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        Set<String> mySet = new HashSet<>();
+        final int[] mutantGenerated = {0};
+
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(MethodDeclaration n, Void arg) {
+                List<MethodCallExpr> methodCalls = n.findAll(MethodCallExpr.class);
+                if (!methodCalls.isEmpty()) {
+                    //find all method declarations with void type
+                    for (MethodDeclaration method : cu.findAll(MethodDeclaration.class)) {
+                        if(method.getType().isVoidType()) mySet.add(method.getNameAsString());
+                    }
+
+                    //iterate over the method calls list now
+                    for(MethodCallExpr method:methodCalls){
+                        String name = method.getNameAsString();
+                        if(mySet.contains(name)){
+                                mutantGenerated[0] += 1;
+                                for (Statement statement : n.getBody().get().getStatements()) {
+                                    if (statement.toString().contains(name)) {
+                                        statement.remove();
+                                        break;
+                                    }
+                                }
+                        }
+                    }
+                }
+                return super.visit(n, arg);
+            }
+        };
+        visitor.visit(cu,null);
+        return new Object[]{cu, mutantGenerated[0]};
+    }
 }

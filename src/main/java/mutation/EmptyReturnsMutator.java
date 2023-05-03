@@ -55,17 +55,14 @@ public class EmptyReturnsMutator implements MutantCreator {
                     }
                     if (EMPTY_VALUES.containsKey(dataType)) {
                         Object emptyValue = EMPTY_VALUES.get(dataType);
-                        System.out.println(" for the dataType: " + dataType +" emptyValue is: "+emptyValue);
                         List<ReturnStmt> returnStmts = n.findAll(ReturnStmt.class);
                         for (ReturnStmt returnStmt : returnStmts) {
                             if (count1[0] == index){
                                 count1[0] += 1;
                                 fileMutationCount[0] = true;
                                 int lineNumber = n.getBegin().get().line;
-
                                 try {
                                     writer.write("total executed mutants so far: "+count1[0]+"\n");
-                                    writer.write("line number : " + lineNumber + "\n");
                                 } catch (IOException e) {
                                     throw new RuntimeException(e);
                                 }
@@ -81,5 +78,34 @@ public class EmptyReturnsMutator implements MutantCreator {
         };
         visitor.visit(cu, null);
         return new Object[]{cu, fileMutationCount[0]};
+    }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(MethodDeclaration n, Void arg) {
+                Type returnType = n.getType();
+                if(returnType != null &&!(returnType instanceof VoidType)){
+                    String dataType = returnType.toString();
+                    int position = dataType.indexOf('<');
+                    if (position != -1) {
+                        dataType = dataType.substring(0, position).trim().toString();
+                    }
+                    if (EMPTY_VALUES.containsKey(dataType)) {
+                        Object emptyValue = EMPTY_VALUES.get(dataType);
+                        List<ReturnStmt> returnStmts = n.findAll(ReturnStmt.class);
+                        for (ReturnStmt returnStmt : returnStmts) {
+                                mutantGenerated[0] +=1;
+                                returnStmt.setExpression(parseExpression(emptyValue.toString()));
+                        }
+                    }
+                }
+                return super.visit(n, arg);
+            }
+        };
+        visitor.visit(cu, null);
+        return new Object[]{cu, mutantGenerated[0]};
     }
 }

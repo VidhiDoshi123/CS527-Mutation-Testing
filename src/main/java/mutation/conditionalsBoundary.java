@@ -94,4 +94,36 @@ public class conditionalsBoundary implements MutantCreator {
         visitor.visit(cu,null);
         return new Object[] {cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>(){
+
+            @Override
+            public Visitable visit(BinaryExpr n, Void args){
+                if(n.getOperator() == BinaryExpr.Operator.LESS){
+                        n.setOperator(BinaryExpr.Operator.LESS_EQUALS);
+                        mutantGenerated[0] += 1;
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS_EQUALS);
+                }
+                else if(n.getOperator()==BinaryExpr.Operator.LESS_EQUALS){
+                        n.setOperator(BinaryExpr.Operator.LESS);
+                        mutantGenerated[0] += 1;
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
+                        n.setOperator(BinaryExpr.Operator.GREATER);
+                        mutantGenerated[0] += 1;
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER);
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER){
+                        n.setOperator(BinaryExpr.Operator.GREATER_EQUALS);
+                        mutantGenerated[0] += 1;
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER_EQUALS);
+                }
+                return super.visit(n,args);
+            }
+        };
+        visitor.visit(cu,null);
+        return new Object[] {cu, mutantGenerated[0]};
+    }
 }

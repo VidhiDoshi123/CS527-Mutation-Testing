@@ -60,4 +60,40 @@ public class returnValuesMutator implements MutantCreator {
         visitor.visit(cu, null);
         return new Object[] {cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(BooleanLiteralExpr n, Void args) {
+                if (n.getParentNode().isPresent() && n.getParentNode().get() instanceof ReturnStmt) {
+                    if (n.getValue()) {
+                            mutantGenerated[0] +=1;
+                            n.setValue(false);
+                        int lineNumber = n.getBegin().get().line;
+                        try {
+                            writer.write("line number : " + lineNumber + "\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return n;
+                    } else {
+                            mutantGenerated[0] +=1;
+                            n.setValue(true);
+                            int lineNumber = n.getBegin().get().line;
+                        try {
+                            writer.write("line number : " + lineNumber + "\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return n;
+                    }
+                }
+                return super.visit(n,args);
+            }
+        };
+        visitor.visit(cu, null);
+        return new Object[] {cu, mutantGenerated[0]};
+    }
 }

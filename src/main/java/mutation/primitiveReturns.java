@@ -73,4 +73,33 @@ public class primitiveReturns implements MutantCreator {
         visitor.visit(cu, null);
         return new Object[]{cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(MethodDeclaration n, Void arg) {
+                Type returnType = n.getType();
+                if(returnType != null &&!(returnType instanceof VoidType)){
+                    String dataType = returnType.toString();
+                    int position = dataType.indexOf('<');
+                    if (position != -1) {
+                        dataType = dataType.substring(0, position).trim().toString();
+                    }
+                    if (EMPTY_VALUES.containsKey(dataType)) {
+                        Object emptyValue = EMPTY_VALUES.get(dataType);
+                        List<ReturnStmt> returnStmts = n.findAll(ReturnStmt.class);
+                        for (ReturnStmt returnStmt : returnStmts) {
+                                mutantGenerated[0] += 1;
+                                returnStmt.setExpression(parseExpression(emptyValue.toString()));
+                        }
+                    }
+                }
+                return super.visit(n, arg);
+            }
+        };
+        visitor.visit(cu, null);
+        return new Object[]{cu, mutantGenerated[0]};
+    }
 }

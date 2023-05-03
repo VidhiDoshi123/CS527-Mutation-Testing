@@ -49,4 +49,27 @@ public class falseReturns implements MutantCreator {
         visitor.visit(cu, null);
         return new Object[]{cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(MethodDeclaration n, Void arg) {
+                Type returnType = n.getType();
+                Boolean primitive = returnType.isPrimitiveType() && returnType.asPrimitiveType().getType() == PrimitiveType.Primitive.BOOLEAN;
+                Boolean boxed = returnType.isClassOrInterfaceType() && returnType.asClassOrInterfaceType().getNameAsString().equals("Boolean");
+                if(primitive || boxed){
+                    List<ReturnStmt> returnStmts = n.findAll(ReturnStmt.class);
+                    for (ReturnStmt returnStmt : returnStmts) {
+                            mutantGenerated[0] +=  1;
+                            returnStmt.setExpression(new BooleanLiteralExpr(false));
+                    }
+                }
+                return super.visit(n, arg);
+            }
+        };
+        visitor.visit(cu, null);
+        return new Object[]{cu, mutantGenerated[0]};
+    }
 }

@@ -91,4 +91,35 @@ public class increment implements MutantCreator {
         visitor.visit(cu,null);
         return new Object[] {cu, fileMutationCount[0]};
     }
+
+    @Override
+    public Object[] generateAllMutants(CompilationUnit cu) {
+        final int[] mutantGenerated = {0};
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
+            @Override
+            public Visitable visit(UnaryExpr n, Void arg) {
+                if (n.getOperator() == UnaryExpr.Operator.PREFIX_INCREMENT) {
+                        n.setOperator(UnaryExpr.Operator.PREFIX_DECREMENT);
+                        mutantGenerated[0] +=1;
+                        return new UnaryExpr(n.getExpression(),UnaryExpr.Operator.PREFIX_DECREMENT);
+                } else if (n.getOperator() == UnaryExpr.Operator.PREFIX_DECREMENT) {
+                        n.setOperator(UnaryExpr.Operator.PREFIX_INCREMENT);
+                        mutantGenerated[0] +=1;
+                        return new UnaryExpr(n.getExpression(),UnaryExpr.Operator.PREFIX_INCREMENT);
+                } else if (n.getOperator() == UnaryExpr.Operator.POSTFIX_INCREMENT) {
+                        n.setOperator(UnaryExpr.Operator.POSTFIX_DECREMENT);
+                        mutantGenerated[0] +=1;
+                        return new UnaryExpr(n.getExpression(),UnaryExpr.Operator.POSTFIX_DECREMENT);
+                } else if (n.getOperator() == UnaryExpr.Operator.POSTFIX_DECREMENT) {
+                        n.setOperator(UnaryExpr.Operator.POSTFIX_INCREMENT);
+                        mutantGenerated[0] +=1;
+                        return new UnaryExpr(n.getExpression(),UnaryExpr.Operator.POSTFIX_INCREMENT);
+                }
+                return super.visit(n,arg);
+            }
+        };
+
+        visitor.visit(cu,null);
+        return new Object[] {cu, mutantGenerated[0]};
+    }
 }
