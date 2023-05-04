@@ -1,0 +1,1035 @@
+--------------------START---------------------------
+Operator Name is : returnValuesMutator
+--------------------START---------------------------
+line number : 352
+line number : 353
+line number : 357
+line number : 358
+line number : 464
+line number : 466
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Attributes.java
+mutants Killed are : 1
+mutants executed are : 3
+mutants generated are : 6
+------ 
+line number : 1162
+line number : 1167
+line number : 1198
+line number : 1194
+line number : 1201
+line number : 1287
+line number : 1303
+line number : 1321
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Element.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 8
+------ 
+line number : 101
+line number : 630
+line number : 631
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Node.java
+mutants Killed are : 1
+mutants executed are : 3
+mutants generated are : 3
+------ 
+line number : 18
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : BooleanAttribute.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 1
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : LeafNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : CDataNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Document.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 296
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Entities.java
+mutants Killed are : 1
+mutants executed are : 1
+mutants generated are : 1
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : EntitiesData.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : DataNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Comment.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : NodeUtils.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : XmlDeclaration.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : FormElement.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : DocumentType.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 187
+line number : 188
+line number : 190
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Attribute.java
+mutants Killed are : 0
+mutants executed are : 3
+mutants generated are : 3
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : TextNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : PseudoTextElement.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : UncheckedIOException.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 87
+line number : 92
+line number : 94
+line number : 104
+line number : 109
+line number : 111
+line number : 183
+line number : 185
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : StringUtil.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 8
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Normalizer.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 115
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ConstrainableInputStream.java
+mutants Killed are : 1
+mutants executed are : 1
+mutants generated are : 1
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Jsoup.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 20
+line number : 39
+line number : 58
+line number : 50
+line number : 46
+line number : 62
+line number : 91
+line number : 79
+line number : 74
+line number : 96
+line number : 103
+line number : 111
+line number : 142
+line number : 157
+line number : 163
+line number : 187
+line number : 191
+line number : 197
+line number : 237
+line number : 228
+line number : 242
+line number : 259
+line number : 276
+line number : 554
+line number : 473
+line number : 387
+line number : 357
+line number : 355
+line number : 341
+line number : 753
+line number : 742
+line number : 728
+line number : 718
+line number : 696
+line number : 682
+line number : 672
+line number : 659
+line number : 576
+line number : 573
+line number : 600
+line number : 764
+line number : 781
+line number : 785
+line number : 804
+line number : 889
+line number : 881
+line number : 873
+line number : 885
+line number : 858
+line number : 865
+line number : 819
+line number : 816
+line number : 914
+line number : 941
+line number : 972
+line number : 951
+line number : 976
+line number : 983
+line number : 1009
+line number : 1019
+line number : 1025
+line number : 1032
+line number : 1072
+line number : 1062
+line number : 1079
+line number : 1086
+line number : 1138
+line number : 1132
+line number : 1122
+line number : 1145
+line number : 1157
+line number : 1195
+line number : 1184
+line number : 1180
+line number : 1170
+line number : 1202
+line number : 1223
+line number : 1233
+line number : 1255
+line number : 1285
+line number : 1302
+line number : 1307
+line number : 1322
+line number : 1342
+line number : 1336
+line number : 1353
+line number : 1399
+line number : 1395
+line number : 1385
+line number : 1380
+line number : 1364
+line number : 1401
+line number : 1423
+line number : 1412
+line number : 1425
+line number : 1441
+line number : 1456
+line number : 1458
+line number : 1463
+line number : 1477
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : HtmlTreeBuilderState.java
+mutants Killed are : 0
+mutants executed are : 3
+mutants generated are : 100
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Parser.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 206
+line number : 207
+line number : 211
+line number : 212
+line number : 213
+line number : 214
+line number : 215
+line number : 216
+line number : 217
+line number : 218
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Tag.java
+mutants Killed are : 2
+mutants executed are : 3
+mutants generated are : 10
+------ 
+line number : 267
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Tokeniser.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 1
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ParseError.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ParseErrorList.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : TreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Token.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 375
+line number : 379
+line number : 380
+line number : 387
+line number : 393
+line number : 395
+line number : 400
+line number : 406
+line number : 408
+line number : 418
+line number : 425
+line number : 436
+line number : 434
+line number : 445
+line number : 443
+line number : 526
+line number : 528
+line number : 530
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : CharacterReader.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 18
+------ 
+line number : 314
+line number : 317
+line number : 335
+line number : 338
+line number : 486
+line number : 488
+line number : 490
+line number : 493
+line number : 527
+line number : 529
+line number : 532
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : HtmlTreeBuilder.java
+mutants Killed are : 2
+mutants executed are : 3
+mutants generated are : 11
+------ 
+line number : 92
+line number : 94
+line number : 99
+line number : 103
+line number : 105
+line number : 124
+line number : 122
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : TokenQueue.java
+mutants Killed are : 2
+mutants executed are : 3
+mutants generated are : 7
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ParseSettings.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 68
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : XmlTreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 1
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : TokeniserState.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Cleaner.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 507
+line number : 537
+line number : 546
+line number : 549
+line number : 628
+line number : 629
+line number : 630
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Whitelist.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 7
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : SerializationException.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : HtmlToPlainText.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Wikipedia.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ListLinks.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Connection.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : UnsupportedMimeTypeException.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : HttpStatusException.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : NodeTraversor.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 25
+line number : 27
+line number : 58
+line number : 63
+line number : 68
+line number : 84
+line number : 103
+line number : 109
+line number : 113
+line number : 129
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : StructuralEvaluator.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 10
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Collector.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 81
+line number : 83
+line number : 171
+line number : 173
+line number : 226
+line number : 228
+line number : 491
+line number : 493
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Elements.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 8
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : QueryParser.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 55
+line number : 57
+line number : 96
+line number : 98
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : CombiningEvaluator.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 4
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Selector.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 163
+line number : 165
+line number : 326
+line number : 446
+line number : 606
+line number : 626
+line number : 628
+line number : 761
+line number : 770
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : Evaluator.java
+mutants Killed are : 3
+mutants executed are : 3
+mutants generated are : 9
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : NodeFilter.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : NodeVisitor.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : DataUtil.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : ChangeNotifyingArrayList.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : Validate.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+line number : 423
+line number : 427
+line number : 433
+line number : 437
+line number : 461
+line number : 463
+line number : 1133
+line number : 1135
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Occurrence number being mutated: 2
+total executed mutants so far: 3
+mutation made? true
+Results for file Name : HttpConnection.java
+mutants Killed are : 0
+mutants executed are : 3
+mutants generated are : 8
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : W3CDom.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Occurrence number being mutated: 1
+mutation made? false
+Occurrence number being mutated: 2
+mutation made? false
+Results for file Name : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+--------------------END---------------------------
+Net killed for returnValuesMutator are: 34
+Net executed for returnValuesMutator are: 53
+Net generated for returnValuesMutator are: 225
+mutation score for returnValuesMutator is: 64.15094339622641
+--------------------END---------------------------

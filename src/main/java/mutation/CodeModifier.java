@@ -29,7 +29,7 @@ public class CodeModifier {
         };
 
         visitor.visit(cu,null);
-//        System.out.println("#mutations "+totalMutations);
+        System.out.println("#mutations made by me"+totalMutations);
         return cu;
     }
 
@@ -47,6 +47,31 @@ public class CodeModifier {
                     totalMutations += 1;
                     n.setOperator(BinaryExpr.Operator.GREATER);
                     return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER);
+                }
+                else{
+                    return super.visit(n,args);
+                }
+            }
+        };
+
+        visitor.visit(cu,null);
+        return cu;
+    }
+
+    public CompilationUnit createMutMultiply(CompilationUnit cu){
+        ModifierVisitor<Void> visitor = new ModifierVisitor<Void>(){
+
+            @Override
+            public Visitable visit(BinaryExpr n, Void args){
+                if(n.getOperator() == BinaryExpr.Operator.MULTIPLY){
+                    totalMutations +=1;
+                    n.setOperator(BinaryExpr.Operator.DIVIDE);
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.DIVIDE);
+                }
+                else if(n.getOperator()==BinaryExpr.Operator.DIVIDE){
+                    totalMutations += 1;
+                    n.setOperator(BinaryExpr.Operator.MULTIPLY);
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.MULTIPLY);
                 }
                 else{
                     return super.visit(n,args);

@@ -30,6 +30,7 @@ public class W3CDom {
     protected DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
     /**
+    /**
      * Convert a jsoup Document to a W3C Document.
      * @param in jsoup doc
      * @return w3c doc
