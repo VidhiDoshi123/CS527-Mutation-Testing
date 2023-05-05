@@ -48,14 +48,14 @@ public class CodeModifierTest
 		//for each operator do steps inside the testJsoup function
 		List<MutantCreator> mutations = new ArrayList<>();
 
-		//completed the below 13
+		//completed the below
+//		mutations.add(new negateConditionals());
+// 		mutations.add(new returnValuesMutator());
+//		mutations.add(new mathMutator());
 //		mutations.add(new conditionalsBoundary());
 // 		mutations.add(new EmptyReturnsMutator());
 // 		mutations.add(new increment());
 // 		mutations.add(new invertNegative());
-//		mutations.add(new negateConditionals());
-//		mutations.add(new mathMutator());
-//		mutations.add(new returnValuesMutator());
 //		mutations.add(new falseReturns());
 //		mutations.add(new trueReturns());
 //		mutations.add(new primitiveReturns());
@@ -147,6 +147,7 @@ public class CodeModifierTest
 		writerfinalStats.write("Mutation coverage is " + mutationCoveragePiTest +"\n"+"\n"+"\n");
 	}
 
+	//function to extract the java files
 	public static List<File> getSubFolderJavaFiles(String path) {
 		File mainFolder = new File(path);
 		List<File> subFolderJavaFiles = new ArrayList<>();
@@ -176,6 +177,8 @@ public class CodeModifierTest
 		//add java files to a list
 		String path = "src/main/java/org/jsoup";
 		List<File> subFolderJavaFiles = getSubFolderJavaFiles(path);
+		List<File> firstTwoFiles = subFolderJavaFiles.subList(0, 1);
+
 
 		//compiling the mutants generated and adding it to target/classes
 		System.out.println("done with extracting java files");
@@ -197,9 +200,9 @@ public class CodeModifierTest
 
 		//execute x mutants from each file
 //		File file = subFolderJavaFiles.get(6);
-//		for (File file : subFolderJavaFiles) {
-		for (int i = 0; i < subFolderJavaFiles.size(); i++){
-			File file = subFolderJavaFiles.get(i);
+		for (File file : subFolderJavaFiles) {
+//		for (int i = 0; i < subFolderJavaFiles.size(); i++){
+//			File file = subFolderJavaFiles.get(i);
 			String fileName = file.getName();
 			int killedCount = 0;
 			int executeCount = 0;
@@ -215,7 +218,7 @@ public class CodeModifierTest
 
 			//execute all mutants
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<3;x++){
+			for(int x = 0;x<2;x++){
 				writer.write("Occurrence number being mutated: "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
