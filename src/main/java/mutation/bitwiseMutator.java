@@ -24,10 +24,10 @@ public class bitwiseMutator implements MutantCreator {
             @Override
             public Visitable visit(BinaryExpr n, Void args){
                 if(n.getOperator() == BinaryExpr.Operator.BINARY_AND){
-
                     if (count1[0] == index){
                         n.setOperator(BinaryExpr.Operator.BINARY_OR);
                         fileMutationCount[0] = true;
+                        count1[0]+=1;
                         int lineNumber = n.getBegin().get().line;
 
                         try {
@@ -58,7 +58,6 @@ public class bitwiseMutator implements MutantCreator {
                 if(n.getOperator() == BinaryExpr.Operator.BINARY_AND){
                     n.setOperator(BinaryExpr.Operator.BINARY_OR);
                     mutantGenerated[0] +=1;
-
                 }
 
                 return super.visit(n,args);

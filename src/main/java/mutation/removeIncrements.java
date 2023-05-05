@@ -49,9 +49,9 @@ public class removeIncrements implements MutantCreator {
         ModifierVisitor<Void> visitor = new ModifierVisitor<Void>() {
             @Override
             public Visitable visit(UnaryExpr n, Void arg) {
-                if (n.getOperator() == UnaryExpr.Operator.PREFIX_INCREMENT) {
-                    mutantGenerated[0] += 1;
-                    return n.getExpression();
+                if (n.getOperator() == UnaryExpr.Operator.POSTFIX_INCREMENT || n.getOperator() == UnaryExpr.Operator.PREFIX_INCREMENT) {
+                        mutantGenerated[0] +=1;
+                        return  n.getExpression();
                 }
                 return super.visit(n, arg);
             }
