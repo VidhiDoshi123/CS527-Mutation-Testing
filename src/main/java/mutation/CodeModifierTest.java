@@ -16,26 +16,12 @@ public class CodeModifierTest
 {
 	private static final String OUTPUT_DIRECTORY = "target/classes" ;
 	static FileWriter writer;
-	static FileWriter writerfinalStats;
 	static int totalMutantsKilled = 0;
 	static int totalMutantsExecuted = 0;
-	static int totalMutantsGenerated = 0;
-
-	static int totalMutantsGeneratedGLOBAL = 0;
-	static int totalMutantsExecutedGLOBAL = 0;
-	static int totalMutantsKilledGLOBAL = 0;
 
 	static {
 		try {
 			writer = new FileWriter("mutationScores.txt", false);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	static {
-		try {
-			writerfinalStats = new FileWriter("finalStatistics.txt", false);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -53,26 +39,39 @@ public class CodeModifierTest
 //		mutations.add(new conditionalsBoundary());
 // 		mutations.add(new EmptyReturnsMutator());
 // 		mutations.add(new increment());
-// 		mutations.add(new invertNegative());
-//		mutations.add(new negateConditionals());
-//		mutations.add(new falseReturns());
-//		mutations.add(new trueReturns());
-//		mutations.add(new RemoveConditionalsMutator());
-//		mutations.add(new primitiveReturns());
-//		mutations.add(new returnValuesMutator());
-
 //		mutations.add(new mathMutator());
+// 		mutations.add(new negateConditionals());
+
+//		mutations.add(new RemoveConditionalsMutator());
+// 		mutations.add(new returnValuesMutator());
+//		mutations.add(new trueReturns());
+//		mutations.add(new falseReturns());
+//		mutations.add(new primitiveReturns());
 //		mutations.add(new voidCallMutator());
 //		mutations.add(new nullReturns());
+//		mutations.add(new invertNegative());
+
+
 
 		//exploring the below
 //		mutations.add(new experimentalSwitch());
+
+
+//		mutations.add(new inlineConstantMutator());
+//		mutations.add(new constructorMutator());
+//		mutations.add(new nonVoidMethodCallMutator());
+//		mutations.add(new aorOperator());
+//		mutations.add(new aodOperator());
+
+		//Run these
+//		mutations.add(new removeIncrements());
+//		mutations.add(new bitwiseMutator());
+//		mutations.add(new rorMutator());
 
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
 			totalMutantsExecuted = 0;
-			totalMutantsGenerated = 0;
 			String nameOfClass = mutant.getClass().getSimpleName();
 			writer.write("--------------------START---------------------------"+ "\n");
 			writer.write("Operator Name is : " +nameOfClass+ "\n");
@@ -80,70 +79,7 @@ public class CodeModifierTest
 			testJsoup(mutant, nameOfClass);
 		}
 		System.out.println("done mutating!");
-		printResults();
 		writer.close();
-		writerfinalStats.close();
-
-	}
-
-	public static void printResults() throws IOException {
-		String currentDirectory = System.getProperty("user.dir");
-		File directory = new File(currentDirectory);
-		File[] files = directory.listFiles((dir, name) -> name.endsWith(".txt")); // Select only text files
-
-		for (File file : files) {
-			try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-				String line;
-				int i = 0;
-				while ((line = br.readLine()) != null) {
-					if (line.startsWith("Net killed for")) {
-						String[] parts = line.split(":");
-						totalMutantsKilledGLOBAL += Integer.parseInt(parts[1].trim());
-						i += 1;
-					}
-					if (line.startsWith("Net executed for")) {
-						String[] parts = line.split(":");
-						totalMutantsExecutedGLOBAL += Integer.parseInt(parts[1].trim());
-						i += 1;
-					}
-					if (line.startsWith("Net generated for")) {
-						String[] parts = line.split(":");
-						totalMutantsGeneratedGLOBAL += Integer.parseInt(parts[1].trim());
-						i+= 1;
-					}
-					if(i==3){
-						break;
-					}
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		writerfinalStats.write("=================STATISTICS========================" + "\n");
-		writerfinalStats.write("****************OUR TOOL****************" + "\n");
-		writerfinalStats.write("Total killed: " + totalMutantsKilledGLOBAL + "\n");
-		writerfinalStats.write("Total executed: " + totalMutantsExecutedGLOBAL + "\n");
-		writerfinalStats.write("Total generated: " + totalMutantsGeneratedGLOBAL+ "\n");
-		int noCoverageGLOBAL = totalMutantsGeneratedGLOBAL - totalMutantsExecutedGLOBAL;
-		writerfinalStats.write("Total with no coverage: " + noCoverageGLOBAL+ "\n");
-
-		double mutationScoreGLOBAL = (double) totalMutantsKilledGLOBAL / totalMutantsExecutedGLOBAL * 100;
-		double mutationCoverage = (double) totalMutantsKilledGLOBAL / totalMutantsGeneratedGLOBAL * 100;
-
-		writerfinalStats.write("MUTATION SCORE/Test strength is " + mutationScoreGLOBAL +"\n");
-		writerfinalStats.write("Mutation coverage is " + mutationScoreGLOBAL +"\n"+"\n"+"\n");
-
-		writerfinalStats.write("****************PI TEST****************" + "\n");
-		writerfinalStats.write("Total killed: " + 2802 + "\n");
-		writerfinalStats.write("Total executed: " + 3716 + "\n");
-		writerfinalStats.write("Total generated: " + 4814+ "\n");
-		writerfinalStats.write("Total with no coverage: " + 1098+ "\n");
-
-		double mutationScorepiTest = (double) 2802 / 3716 * 100;
-		double mutationCoveragePiTest = (double) 2802 / 4814 * 100;
-
-		writerfinalStats.write("MUTATION SCORE/Test strength is " + mutationScorepiTest +"\n");
-		writerfinalStats.write("Mutation coverage is " + mutationCoveragePiTest +"\n"+"\n"+"\n");
 	}
 
 	public static List<File> getSubFolderJavaFiles(String path) {
@@ -179,6 +115,7 @@ public class CodeModifierTest
 		//compiling the mutants generated and adding it to target/classes
 		System.out.println("done with extracting java files");
 		System.out.println("starting the process of parsing,mutating,compiling,running");
+
 		mutatedFilesCompiler mutcom = new mutatedFilesCompiler();
 		// Store the updated killed count for the class name
 		/*
@@ -194,26 +131,15 @@ public class CodeModifierTest
 		10) create reports
 		*/
 
-		//execute x mutants from each file
+		System.out.println("length of subFolderJavaFiles : "+(subFolderJavaFiles).size());
 //		File file = subFolderJavaFiles.get(7);
 		for (File file : subFolderJavaFiles) {
 			String fileName = file.getName();
 			int killedCount = 0;
 			int executeCount = 0;
-			int generateCount = 0;
-
-			//generating all mutants
-			CompilationUnit cu2 = StaticJavaParser.parse(file);
-			Object[] generateMutresult = mutant.generateAllMutants(cu2);
-			generateCount = (int) generateMutresult[1];
-			CompilationUnit obj = (CompilationUnit) generateMutresult[0];
-			mutcom.mutatedJavaCompile(obj, OUTPUT_DIRECTORY);
-			System.out.println("done generating mutants");
-
-			//execute all mutants
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<3;x++){
-				writer.write("Occurrence number being mutated: "+x + "\n");
+			for(int x = 0;x<1;x++){
+				writer.write("now value of x is : "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
 				try{
@@ -225,7 +151,7 @@ public class CodeModifierTest
 
 				Object[] result = mutant.createMutant(cu1, x);
 				CompilationUnit obj1 = (CompilationUnit) result[0];
-				writer.write("mutation made? "+result[1]+"\n");
+				writer.write("mutation made is "+result[1]+"\n");
 				if(result[1].equals(true)) {
 					executeCount +=1;
 				}
@@ -238,6 +164,7 @@ public class CodeModifierTest
 						killedCount +=1;
 					}
 					System.out.println("maven run complete");
+
 //					String reportName = nameOfClass + "_" + fileName + "_" + x;
 //					createReports(reportName);
 //					System.out.println("report generated for : "+reportName);
@@ -249,25 +176,24 @@ public class CodeModifierTest
 			}
 
 			totalMutantsKilled += killedCount;
-			totalMutantsExecuted += executeCount;
-			totalMutantsGenerated += generateCount;
+			totalMutantsExecuted +=executeCount;
 
-			writer.write("Results for file Name : " +fileName+ "\n");
+			writer.write("file Name is : " +fileName+ "\n");
 			writer.write("mutants Killed are : " +killedCount+ "\n");
 			writer.write("mutants executed are : " +executeCount+ "\n");
-			writer.write("mutants generated are : " +generateCount+ "\n");
 			writer.write("------ "+"\n");
+//			break;
 		}
 		//done with all java files for an operator
 		writer.write("--------------------END---------------------------"+ "\n");
 		writer.write("Net killed for " + nameOfClass + " are: " + totalMutantsKilled +"\n");
 		writer.write("Net executed for " + nameOfClass + " are: " + totalMutantsExecuted +"\n");
-		writer.write("Net generated for " + nameOfClass + " are: " + totalMutantsGenerated +"\n");
 
 		double mutationScore = (double) totalMutantsKilled / totalMutantsExecuted * 100;
 
 		writer.write("mutation score for " + nameOfClass + " is: " + mutationScore +"\n");
 		writer.write("--------------------END---------------------------"+ "\n");
+
 	}
 
 	public static void runMavenClean() throws IOException, InterruptedException {

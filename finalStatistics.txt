@@ -1,11 +1,11 @@
 =================STATISTICS========================
 ****************OUR TOOL****************
-Total killed: 510
-Total executed: 881
+Total killed: 569
+Total executed: 942
 Total generated: 0
-Total with no coverage: -881
-MUTATION SCORE/Test strength is 57.888762769580026
-Mutation coverage is 57.888762769580026
+Total with no coverage: -942
+MUTATION SCORE/Test strength is 60.403397027600846
+Mutation coverage is 60.403397027600846
 
 
 ****************PI TEST****************
