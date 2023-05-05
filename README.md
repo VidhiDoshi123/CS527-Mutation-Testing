@@ -8,7 +8,7 @@
 1. Clone the repository.
 2. Run mvn clean, mvn test, to verify the code is in its original state.
 3. Run CodeModifierTest.java file.
-4. See mutationScores.txt to find mutants killed, executed and generated.
+4. See mutationScores.txt to find mutants killed, executed and generated for respective mutators.
 5. Check finalStatistics.txt to find the comparison of our tool with Pitest.
 
 ## Approach
