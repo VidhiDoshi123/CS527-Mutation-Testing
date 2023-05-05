@@ -1,0 +1,50 @@
+--------------------START---------------------------
+Operator Name is : negateConditionals
+--------------------START---------------------------
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 91
+mutation made? true
+Occurrence killed is: 0
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+line number : 102
+mutation made? true
+Occurrence killed is: 1
+Results for file Name : Attributes.java
+mutants Killed are : 2
+mutants executed are : 2
+mutants generated are : 18
+------ 
+--------------------END---------------------------
+Net killed for negateConditionals are: 2
+Net executed for negateConditionals are: 2
+Net generated for negateConditionals are: 18
+mutation score for negateConditionals is: 100.0
+--------------------END---------------------------
+--------------------START---------------------------
+Operator Name is : returnValuesMutator
+--------------------START---------------------------
+line number : 352
+line number : 353
+line number : 357
+line number : 358
+line number : 464
+line number : 466
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+mutation made? true
+Occurrence number being mutated: 1
+total executed mutants so far: 2
+mutation made? true
+Results for file Name : Attributes.java
+mutants Killed are : 0
+mutants executed are : 2
+mutants generated are : 6
+------ 
+--------------------END---------------------------
+Net killed for returnValuesMutator are: 0
+Net executed for returnValuesMutator are: 2
+Net generated for returnValuesMutator are: 6
+mutation score for returnValuesMutator is: 0.0
+--------------------END---------------------------
