@@ -1,0 +1,79 @@
+--------------------START---------------------------
+Operator Name is : removeIncrements
+--------------------START---------------------------
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 73
+mutation made? true
+Results for file Name : Attributes.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 290
+mutation made? true
+Results for file Name : Element.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 361
+mutation made? true
+Results for file Name : Node.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Results for file Name : BooleanAttribute.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Results for file Name : LeafNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Results for file Name : CDataNode.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 166
+mutation made? true
+Results for file Name : Document.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+total executed mutants so far: 1
+line number : 350
+mutation made? true
+Results for file Name : Entities.java
+mutants Killed are : 0
+mutants executed are : 1
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Results for file Name : EntitiesData.java
+mutants Killed are : 0
+mutants executed are : 0
+mutants generated are : 0
+------ 
+Occurrence number being mutated: 0
+mutation made? false
+Results

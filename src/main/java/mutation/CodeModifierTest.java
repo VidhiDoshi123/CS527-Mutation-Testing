@@ -49,27 +49,27 @@ public class CodeModifierTest
 		List<MutantCreator> mutations = new ArrayList<>();
 
 		//completed the below
-//		mutations.add(new negateConditionals());
-// 		mutations.add(new returnValuesMutator());
-//		mutations.add(new mathMutator());
-//		mutations.add(new conditionalsBoundary());
-// 		mutations.add(new EmptyReturnsMutator());
-// 		mutations.add(new increment());
-// 		mutations.add(new invertNegative());
-//		mutations.add(new falseReturns());
-//		mutations.add(new trueReturns());
-//		mutations.add(new primitiveReturns());
-//		mutations.add(new RemoveConditionalsMutator());
-//		mutations.add(new nullReturns());
-//		mutations.add(new voidCallMutator());
-//		mutations.add(new experimentalSwitch());
-//		mutations.add(new inlineConstantMutator());
-//		mutations.add(new constructorMutator());
-//		mutations.add(new nonVoidMethodCallMutator());
-//		mutations.add(new aorOperator());
-//		mutations.add(new aodOperator());
-//		mutations.add(new removeIncrements());
-//		mutations.add(new rorMutator());
+		mutations.add(new negateConditionals());
+ 		mutations.add(new returnValuesMutator());
+		mutations.add(new mathMutator());
+		mutations.add(new conditionalsBoundary());
+ 		mutations.add(new EmptyReturnsMutator());
+ 		mutations.add(new increment());
+ 		mutations.add(new invertNegative());
+		mutations.add(new falseReturns());
+		mutations.add(new trueReturns());
+		mutations.add(new primitiveReturns());
+		mutations.add(new RemoveConditionalsMutator());
+		mutations.add(new nullReturns());
+		mutations.add(new voidCallMutator());
+		mutations.add(new experimentalSwitch());
+		mutations.add(new inlineConstantMutator());
+		mutations.add(new constructorMutator());
+		mutations.add(new nonVoidMethodCallMutator());
+		mutations.add(new aorOperator());
+		mutations.add(new aodOperator());
+		mutations.add(new removeIncrements());
+		mutations.add(new rorMutator());
 
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
