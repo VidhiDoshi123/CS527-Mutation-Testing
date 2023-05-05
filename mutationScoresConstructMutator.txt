@@ -1,0 +1,24 @@
+--------------------START---------------------------
+Operator Name is : constructorMutator
+--------------------START---------------------------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 262
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 272
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 289
+mutation made is true
+file Name is : Attributes.java
+mutants Killed are : 3
+mutants executed are : 3
+------
+--------------------END---------------------------
+Net killed for constructorMutator are: 3
+Net executed for constructorMutator are: 3
+mutation score for constructorMutator is: 100.0
+--------------------END---------------------------

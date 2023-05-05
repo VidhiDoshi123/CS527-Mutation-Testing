@@ -65,6 +65,19 @@ public class CodeModifierTest
 //		mutations.add(new voidCallMutator());
 //		mutations.add(new experimentalSwitch());
 
+//------------------------------------
+//Completed
+//		mutations.add(new inlineConstantMutator());
+//		mutations.add(new constructorMutator());
+//		mutations.add(new nonVoidMethodCallMutator());
+//		mutations.add(new aorOperator());
+//		mutations.add(new aodOperator());
+
+		//Run these
+//		mutations.add(new removeIncrements());
+//		mutations.add(new bitwiseMutator());
+//		mutations.add(new rorMutator());
+
 		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
