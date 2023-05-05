@@ -1,0 +1,1252 @@
+--------------------START---------------------------
+Operator Name is : nonVoidMethodCallMutator
+--------------------START---------------------------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 49
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 64
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 71
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 80
+mutation made is true
+file Name is : Attributes.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 87
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 94
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 99
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 106
+mutation made is true
+file Name is : Element.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 32
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 37
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 39
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 58
+mutation made is true
+file Name is : Node.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 16
+mutation made is true
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : BooleanAttribute.java
+mutants Killed are : 0
+mutants executed are : 1
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 13
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 17
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 23
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 33
+mutation made is true
+file Name is : LeafNode.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 15
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 24
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 29
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 36
+mutation made is true
+file Name is : CDataNode.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 42
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 59
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 67
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 75
+mutation made is true
+file Name is : Document.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 55
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 60
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 71
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 85
+mutation made is true
+file Name is : Entities.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : EntitiesData.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 29
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 37
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 46
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 51
+mutation made is true
+file Name is : DataNode.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 33
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 41
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 45
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 54
+mutation made is true
+file Name is : Comment.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 15
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 23
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : NodeUtils.java
+mutants Killed are : 2
+mutants executed are : 2
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 39
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 47
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 55
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 65
+mutation made is true
+file Name is : XmlDeclaration.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 35
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 44
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 49
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 62
+mutation made is true
+file Name is : FormElement.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 73
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 78
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 83
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 102
+mutation made is true
+file Name is : DocumentType.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 55
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 63
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 79
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 87
+mutation made is true
+file Name is : Attribute.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 36
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 45
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 54
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 63
+mutation made is true
+file Name is : TextNode.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 15
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 19
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : PseudoTextElement.java
+mutants Killed are : 2
+mutants executed are : 2
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 14
+mutation made is true
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : UncheckedIOException.java
+mutants Killed are : 1
+mutants executed are : 1
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 27
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 37
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 59
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 68
+mutation made is true
+file Name is : StringUtil.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 10
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 14
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : Normalizer.java
+mutants Killed are : 2
+mutants executed are : 2
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 42
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 48
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 76
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 101
+mutation made is true
+file Name is : ConstrainableInputStream.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 30
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 44
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 57
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 72
+mutation made is true
+file Name is : Jsoup.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 18
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 43
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 65
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 72
+mutation made is true
+file Name is : HtmlTreeBuilderState.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 30
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 34
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 38
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 46
+mutation made is true
+file Name is : Parser.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 38
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 46
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 60
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 87
+mutation made is true
+file Name is : Tag.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 55
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 75
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 91
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 105
+mutation made is true
+file Name is : Tokeniser.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 24
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 32
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 36
+mutation made is true
+now value of x is : 3
+mutation made is false
+file Name is : ParseError.java
+mutants Killed are : 3
+mutants executed are : 3
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 19
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 23
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 27
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 31
+mutation made is true
+file Name is : ParseErrorList.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 28
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 30
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 45
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 51
+mutation made is true
+file Name is : TreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 17
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 25
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 27
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 44
+mutation made is true
+file Name is : Token.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 50
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 77
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 85
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 90
+mutation made is true
+file Name is : CharacterReader.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 59
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 63
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 82
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 133
+mutation made is true
+file Name is : HtmlTreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 31
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 35
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 43
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 51
+mutation made is true
+file Name is : TokenQueue.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 31
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 38
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 55
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 65
+mutation made is true
+file Name is : ParseSettings.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 25
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 29
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 36
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 40
+mutation made is true
+file Name is : XmlTreeBuilder.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 11
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 35
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 41
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 65
+mutation made is true
+file Name is : TokeniserState.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 53
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 74
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 83
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 106
+mutation made is true
+file Name is : Cleaner.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 78
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 88
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 109
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 135
+mutation made is true
+file Name is : Whitelist.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : SerializationException.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 34
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 61
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 75
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 88
+mutation made is true
+file Name is : HtmlToPlainText.java
+mutants Killed are : 0
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 14
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 24
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : Wikipedia.java
+mutants Killed are : 0
+mutants executed are : 2
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 15
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 46
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 50
+mutation made is true
+now value of x is : 3
+mutation made is false
+file Name is : ListLinks.java
+mutants Killed are : 0
+mutants executed are : 3
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 46
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 56
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 63
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 70
+mutation made is true
+file Name is : Connection.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 18
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 22
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 26
+mutation made is true
+now value of x is : 3
+mutation made is false
+file Name is : UnsupportedMimeTypeException.java
+mutants Killed are : 3
+mutants executed are : 3
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 18
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 22
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 26
+mutation made is true
+now value of x is : 3
+mutation made is false
+file Name is : HttpStatusException.java
+mutants Killed are : 3
+mutants executed are : 3
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 31
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 40
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 68
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 81
+mutation made is true
+file Name is : NodeTraversor.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 12
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 22
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 30
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 41
+mutation made is true
+file Name is : StructuralEvaluator.java
+mutants Killed are : 1
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 25
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 42
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 50
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 55
+mutation made is true
+file Name is : Collector.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 47
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 65
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 78
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 93
+mutation made is true
+file Name is : Elements.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 39
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 52
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 81
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 133
+mutation made is true
+file Name is : QueryParser.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 28
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 32
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 36
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 50
+mutation made is true
+file Name is : CombiningEvaluator.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 90
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 102
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 115
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 136
+mutation made is true
+file Name is : Selector.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 36
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 48
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 53
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 70
+mutation made is true
+file Name is : Evaluator.java
+mutants Killed are : 2
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 49
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 57
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : NodeFilter.java
+mutants Killed are : 2
+mutants executed are : 2
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 21
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 30
+mutation made is true
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : NodeVisitor.java
+mutants Killed are : 2
+mutants executed are : 2
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 53
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 65
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 78
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 88
+mutation made is true
+file Name is : DataUtil.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 14
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 16
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 22
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 28
+mutation made is true
+file Name is : ChangeNotifyingArrayList.java
+mutants Killed are : 3
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 14
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 24
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 33
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 43
+mutation made is true
+file Name is : Validate.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 68
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 74
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 90
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 99
+mutation made is true
+file Name is : HttpConnection.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+total executed mutants so far: 1
+line number : 38
+mutation made is true
+now value of x is : 1
+total executed mutants so far: 2
+line number : 60
+mutation made is true
+now value of x is : 2
+total executed mutants so far: 3
+line number : 84
+mutation made is true
+now value of x is : 3
+total executed mutants so far: 4
+line number : 120
+mutation made is true
+file Name is : W3CDom.java
+mutants Killed are : 4
+mutants executed are : 4
+------
+now value of x is : 0
+mutation made is false
+now value of x is : 1
+mutation made is false
+now value of x is : 2
+mutation made is false
+now value of x is : 3
+mutation made is false
+file Name is : package-info.java
+mutants Killed are : 0
+mutants executed are : 0
+------
+--------------------END---------------------------
+Net killed for nonVoidMethodCallMutator are: 146
+Net executed for nonVoidMethodCallMutator are: 214
+mutation score for nonVoidMethodCallMutator is: 68.22429906542055
+--------------------END---------------------------

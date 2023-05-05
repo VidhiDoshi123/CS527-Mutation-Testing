@@ -9,8 +9,8 @@ import java.io.IOException;
 
 import static mutation.CodeModifierTest.writer;
 
-public class conditionalsBoundary implements MutantCreator {
-    public conditionalsBoundary() throws IOException {
+public class rorMutator implements MutantCreator {
+    public rorMutator() throws IOException {
     }
     public Object[] createMutant(CompilationUnit cu, int index) throws IOException {
         final boolean[] fileMutationCount = {false};
@@ -57,9 +57,9 @@ public class conditionalsBoundary implements MutantCreator {
                     } else {
                         count1[0] +=1;
                     }
-                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER){
                     if (count1[0] == index){
-                        n.setOperator(BinaryExpr.Operator.GREATER);
+                        n.setOperator(BinaryExpr.Operator.LESS);
                         System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
                         count1[0] +=1;
                         fileMutationCount[0] = true;
@@ -68,13 +68,13 @@ public class conditionalsBoundary implements MutantCreator {
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
                     } else {
                         count1[0] +=1;
                     }
-                }else if(n.getOperator()==BinaryExpr.Operator.GREATER){
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
                     if (count1[0] == index){
-                        n.setOperator(BinaryExpr.Operator.GREATER_EQUALS);
+                        n.setOperator(BinaryExpr.Operator.LESS);
                         System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
                         count1[0] +=1;
                         fileMutationCount[0] = true;
@@ -83,7 +83,37 @@ public class conditionalsBoundary implements MutantCreator {
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER_EQUALS);
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                    } else {
+                        count1[0] +=1;
+                    }
+                }else if(n.getOperator()==BinaryExpr.Operator.EQUALS){
+                    if (count1[0] == index){
+                        n.setOperator(BinaryExpr.Operator.LESS);
+                        System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
+                        count1[0] +=1;
+                        fileMutationCount[0] = true;
+                        try {
+                            writer.write("total executed mutants so far: "+count1[0]+"\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                    } else {
+                        count1[0] +=1;
+                    }
+                }else if(n.getOperator()==BinaryExpr.Operator.NOT_EQUALS){
+                    if (count1[0] == index){
+                        n.setOperator(BinaryExpr.Operator.LESS);
+                        System.out.println("From Less equals count is : "+ count1[0] + " index is: "+index);
+                        count1[0] +=1;
+                        fileMutationCount[0] = true;
+                        try {
+                            writer.write("total executed mutants so far: "+count1[0]+"\n");
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
                     } else {
                         count1[0] +=1;
                     }
@@ -111,14 +141,22 @@ public class conditionalsBoundary implements MutantCreator {
                     n.setOperator(BinaryExpr.Operator.LESS);
                     mutantGenerated[0] += 1;
                     return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
-                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
-                    n.setOperator(BinaryExpr.Operator.GREATER);
-                    mutantGenerated[0] += 1;
-                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER);
                 }else if(n.getOperator()==BinaryExpr.Operator.GREATER){
-                    n.setOperator(BinaryExpr.Operator.GREATER_EQUALS);
+                    n.setOperator(BinaryExpr.Operator.LESS);
                     mutantGenerated[0] += 1;
-                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.GREATER_EQUALS);
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                }else if(n.getOperator()==BinaryExpr.Operator.GREATER_EQUALS){
+                    n.setOperator(BinaryExpr.Operator.LESS);
+                    mutantGenerated[0] += 1;
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                }else if(n.getOperator()==BinaryExpr.Operator.EQUALS){
+                    n.setOperator(BinaryExpr.Operator.LESS);
+                    mutantGenerated[0] += 1;
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
+                }else if(n.getOperator()==BinaryExpr.Operator.NOT_EQUALS){
+                    n.setOperator(BinaryExpr.Operator.LESS);
+                    mutantGenerated[0] += 1;
+                    return new BinaryExpr(n.getLeft(),n.getRight(),BinaryExpr.Operator.LESS);
                 }
                 return super.visit(n,args);
             }

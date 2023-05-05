@@ -63,8 +63,14 @@ public class CodeModifierTest
 //		mutations.add(new nullReturns());
 //		mutations.add(new voidCallMutator());
 //		mutations.add(new experimentalSwitch());
+//		mutations.add(new inlineConstantMutator());
+//		mutations.add(new constructorMutator());
+//		mutations.add(new nonVoidMethodCallMutator());
+//		mutations.add(new aorOperator());
+//		mutations.add(new aodOperator());
+//		mutations.add(new removeIncrements());
+//		mutations.add(new rorMutator());
 
-		System.out.println("let's start!");
 		for (MutantCreator mutant : mutations) {
 			totalMutantsKilled = 0;
 			totalMutantsExecuted = 0;
@@ -190,7 +196,7 @@ public class CodeModifierTest
 		*/
 
 		//execute x mutants from each file
-//		File file = subFolderJavaFiles.get(7);
+//		File file = subFolderJavaFiles.get(6);
 //		for (File file : subFolderJavaFiles) {
 		for (int i = 0; i < subFolderJavaFiles.size(); i++){
 			File file = subFolderJavaFiles.get(i);
@@ -209,7 +215,7 @@ public class CodeModifierTest
 
 			//execute all mutants
 			//x represents the total mutators to be created in a single file
-			for(int x = 0;x<1;x++){
+			for(int x = 0;x<3;x++){
 				writer.write("Occurrence number being mutated: "+x + "\n");
 				CompilationUnit cu1 = StaticJavaParser.parse(file);
 				//pre run
@@ -232,6 +238,7 @@ public class CodeModifierTest
 					System.out.println("pre run complete");
 					int exitValue = runMavenSureFireTest();
 					if ((result[1].equals(true))&&(exitValue!=0)){
+						writer.write("Occurrence killed is: "+x + "\n");
 						killedCount +=1;
 					}
 					System.out.println("maven run complete");
