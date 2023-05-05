@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
 public class CodeModifierTest
 {
 	private static final String OUTPUT_DIRECTORY = "target/classes" ;
@@ -280,7 +279,6 @@ public class CodeModifierTest
 		}
 		process.waitFor();
 	}
-
 	public static void runMavenTest() throws IOException, InterruptedException {
 		ProcessBuilder pb = new ProcessBuilder("sh", "-c", " mvn test");
 		pb.redirectErrorStream(true);
@@ -302,7 +300,6 @@ public class CodeModifierTest
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 		String line;
-
 		//setting the timeout to make sure the code does not hang
 		ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
 		long timeout = 20; // timeout in seconds

@@ -48,9 +48,43 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 <!--				<configuration>-->
+
 <!--					<workingDirectory>${project.build.directory}/classes-mutated/org/jsoup</workingDirectory>-->
 <!--&lt;!&ndash;					<classpathPrefix>${project.build.directory}/classes-mutated/org/jsoup</classpathPrefix>&ndash;&gt;-->
 <!--				</configuration>-->
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pdf-plugin</artifactId>
+				<version>1.6.1</version>
+				<executions>
+					<execution>
+						<id>surefire-report-to-pdf</id>
+						<phase>package</phase>
+						<goals>
+							<goal>pdf</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.7.3</version>
+				<configuration>
+					<mutators>
+						<mutator>CONDITIONALS_BOUNDARY</mutator>
+					</mutators>
+					<verbose>true</verbose>
+					<targetClasses>
+						<param>com.example.mypackage.*</param>
+					</targetClasses>
+					<targetTests>
+						<param>com.example.mypackage.*Test</param>
+					</targetTests>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -112,6 +146,7 @@
             <artifactId>maven-core</artifactId>
             <version>2.0.9</version>
         </dependency>
+
     </dependencies>
 
 
@@ -122,6 +157,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.7.1</version>
+				<configuration>
+					<outputDirectory>${basedir}/target/newsite</outputDirectory>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
